@@ -1,0 +1,128 @@
+/*********** theme ************/
+
+:root {
+  --color-theme-1: #181818;
+  --color-theme-2: #ff4500;
+  --color-theme-3: #868686;
+  --color-theme-4: #b3b3b3;
+}
+
+/********* general ********/
+
+* {
+  font-family: "Cinzel", serif;
+}
+
+body {
+  background-color: var(--color-theme-3);
+}
+
+/*********** header **************/
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 10px 10px;
+  align-items: end;
+  column-gap: 8px;
+  border-bottom: 1px solid var(--color-theme-1);
+}
+
+header img {
+  display: block;
+  width: 24px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+header span {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-theme-1);
+}
+
+/*********** hamburger ********/
+
+.hamburger {
+  background-color: var(--color-theme-3);
+  border: none;
+  cursor: pointer;
+  color: var(--color-theme-2);
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px var(--color-theme-1);
+  /*the best font for hamburger button*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+  content: "\2630";
+}
+
+.hamburger.show::after {
+  content: "\00d7";
+}
+
+/************* navigation ***************/
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+/* 1 */
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 2 */
+.navigation ul li {
+}
+
+/* 3 */
+.navigation ul li a {
+  display: block;
+  padding: 0.8rem 10px;
+  color: var(--color-theme-1);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-theme-1);
+  font-weight: 500;
+}
+
+/* 5 */
+.navigation ul li.current {
+  background-color: var(--color-theme-4);
+}
+
+/* 4 */
+.navigation ul li a:hover {
+  background-color: var(--color-theme-2);
+}
+
+/* 6 */
+
+h1 {
+  margin-left: 10px;
+}
+
+/**************** footer ***********/
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  color: #ff4500;
+}
+
+.social a {
+  color: #ff4500;
+}
+
+svg {
+  fill: currentColor;
+}
