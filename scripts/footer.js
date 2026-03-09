@@ -7,3 +7,5 @@ copyrightText.textContent = `© 🔥 ${new Intl.DateTimeFormat("en-US", {
 }).format(today)} 🔥 Bruno Câmara 🔥 Minas Gerais, Brazil`;
 
 lastModified.textContent = document.lastModified;
+
+

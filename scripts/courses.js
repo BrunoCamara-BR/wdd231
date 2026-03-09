@@ -2,15 +2,6 @@ const courseList = document.getElementById("courses");
 const filter = document.querySelector("#filter");
 const coursesInfo = document.querySelector("#courses-info");
 
-// const courses = [
-//   { code: "CSE 110", status: "completed" },
-//   { code: "CSE 111", status: "completed" },
-//   { code: "CSE 210", status: "in-progress" },
-//   { code: "WDD 130", status: "completed" },
-//   { code: "WDD 131", status: "completed" },
-//   { code: "WDD 231", status: "in-progress" },
-// ];
-
 const courses = [
   {
     subject: "CSE",
@@ -93,10 +84,10 @@ function showList(list) {
 filter.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const filter = e.submitter.value;
+  const filterSub = e.submitter.value;
 
   const filteredList = courses.filter((item) => {
-    return item.subject.includes(filter);
+    return item.subject.includes(filterSub);
   });
 
   showList(filteredList);
