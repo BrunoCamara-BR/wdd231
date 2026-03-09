@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruno's site</title>
+    <title>Bruno's Site</title>
     <meta name="author" content="Bruno Câmara dos Santos" />
     <meta
       name="description"
@@ -24,73 +24,32 @@
       rel="stylesheet"
     />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-
-    <!-- scripts -->
-    <script src="scripts/navegation.js" defer></script>
-
-    <script src="scripts/courses.js" defer></script>
-
-    <script src="scripts/footer.js" defer></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
   </head>
   <body>
     <header>
-      <div>
-        <img src="images/logo.svg" alt="Bruno's site logo" />
-        <span>Bruno's Site</span>
-        <button id="nav-button" class="hamburger"></button>
-      </div>
-      <nav id="nav-bar">
-        <ul>
-          <li class="current"><a href="#">Home</a></li>
-          <li><a href="#">Chamber Project</a></li>
-          <li><a href="#">Final Project</a></li>
-        </ul>
-      </nav>
+      <img src="images/logo.svg" alt="site logo" width="24" height="24" />
+      <span>Bruno's Site</span>
+      <button id="hambutton" class="hamburger"></button>
     </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="#">News and Events</a></li>
+        <li class="current"><a href="#">Dedicated Temples</a></li>
+        <li><a href="#">Announced Temples</a></li>
+      </ul>
+    </nav>
     <main>
-      <h1>Home</h1>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-          perspiciatis enim fugiat, officia modi mollitia quidem assumenda
-          molestiae, quisquam nemo commodi tenetur debitis eius distinctio, vero
-          fugit consequuntur qui aliquid?
-        </p>
-      </section>
-      <section class="photo">
-        <h2>Student Photo</h2>
-        <img
-          src="images/profile.jpg"
-          alt="Bruno's photo"
-          width="200"
-          height="200"
-        />
-      </section>
-      <section class="certificate">
-        <h2>Web Certificate Courses</h2>
-
-        <form id="filter">
-          <button type="submit" value="">All</button>
-          <button type="submit" value="CSE">CSE</button>
-          <button type="submit" value="WDD">WDD</button>
-        </form>
-
-        <ul id="courses"></ul>
-        <p id="courses-info"></p>
-      </section>
+      <h1>Dedicated Temples</h1>
     </main>
     <footer>
       <div class="social">
         <!--GITHUB ICO SVG-->
-        <a href="https://github.com/BrunoCamara-BR/" target="_blank"
+        <a href="#" target="_blank"
           ><svg
-            role="img"
-            aria-labelledby="github"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             version="1.1"
@@ -102,6 +61,8 @@
             xml:space="preserve"
             width="44"
             height="44"
+            role="img"
+            aria-labelledby="github"
           >
             <title id="github">Github logo</title>
             <g>
@@ -135,16 +96,16 @@
         </a>
 
         <!--LINKEDIN ICO SVG-->
-        <a href="https://www.linkedin.com/in/brucamara/" target="_blank">
+        <a href="#" target="_blank">
           <svg
-            role="img"
-            aria-labelledby="linkedin"
             xmlns="http://www.w3.org/2000/svg"
             id="Capa_32"
             data-name="Capa 32"
             viewBox="0 0 24 24"
             width="44"
             height="44"
+            role="img"
+            aria-labelledby="linkedin"
           >
             <title id="linkedin">Linked in logo</title>
             <path
@@ -160,10 +121,8 @@
         </a>
 
         <!--FACEBOOK ICO SVG-->
-        <a href="https://www.facebook.com/brunocamarag" target="_blank">
+        <a href="#" target="_blank">
           <svg
-            role="img"
-            aria-labelledby="facebook"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             version="1.1"
@@ -175,6 +134,8 @@
             xml:space="preserve"
             width="44"
             height="44"
+            aria-labelledby="facebook"
+            role="img"
           >
             <title id="facebook">Facebook logo</title>
             <g>
@@ -184,32 +145,31 @@
             </g>
           </svg>
         </a>
-        <!--INSTAGRAM ICO SVG -->
-        <a href="https://www.instagram.com/bru.camara/" target="_blank">
+        <!--TWITTER ICO SVG -->
+        <a href="#" target="_blank">
           <svg
-            role="img"
-            aria-labelledby="instagram"
             xmlns="http://www.w3.org/2000/svg"
-            id="Capa_39"
-            data-name="Capa 39"
+            id="Capa_1"
+            data-name="Capa 1"
             viewBox="0 0 24 24"
+            width="44"
+            height="44"
+            role="img"
+            aria-labelledby="twitter"
           >
-            <title id="instagram">Instagram logo</title>
-            <path
-              d="m14.502,11.986c0,1.431-1.16,2.591-2.591,2.591s-2.59-1.16-2.59-2.591,1.16-2.591,2.59-2.591,2.591,1.16,2.591,2.591h0Zm0,0"
+            <title id="twitter">Twitter logo</title>
+            <polygon
+              points="6.861 6.159 15.737 17.764 17.097 17.764 8.322 6.159 6.861 6.159"
             />
             <path
-              d="m12,0h0C5.373,0,0,5.373,0,12h0c0,6.627,5.373,12,12,12h0c6.627,0,12-5.373,12-12h0C24,5.373,18.627,0,12,0Zm7.637,15.19c-.037.827-.169,1.392-.361,1.886-.199.511-.465.945-.897,1.377-.432.432-.866.698-1.376.896-.494.192-1.06.323-1.887.361-.829.038-1.094.047-3.205.047s-2.375-.009-3.204-.047c-.827-.038-1.392-.169-1.887-.361-.511-.198-.944-.465-1.377-.896-.432-.432-.698-.866-.897-1.377-.192-.494-.323-1.059-.361-1.886-.038-.829-.047-1.094-.047-3.205s.009-2.375.047-3.204c.038-.827.169-1.392.361-1.887.199-.511.465-.944.897-1.376s.866-.698,1.377-.897c.494-.192,1.06-.323,1.887-.361.829-.038,1.094-.047,3.204-.047s2.376.009,3.205.047c.827.037,1.392.169,1.887.361.511.198.944.465,1.376.897.432.432.698.866.897,1.376.192.494.323,1.06.361,1.887.038.829.047,1.093.047,3.204s-.009,2.375-.047,3.205h0Zm-1.666-7.788c-.141-.363-.309-.622-.582-.894-.272-.272-.531-.441-.894-.582-.274-.106-.685-.233-1.443-.267-.82-.038-1.066-.045-3.141-.045s-2.321.008-3.141.045c-.757.034-1.169.161-1.443.267-.363.141-.622.309-.894.582-.272.272-.441.531-.582.894-.106.274-.233.685-.267,1.443-.038.819-.045,1.065-.045,3.141s.008,2.321.045,3.141c.035.757.161,1.169.267,1.443.141.363.309.622.582.894.272.272.531.44.894.581.274.107.685.233,1.443.268.819.038,1.065.045,3.141.045s2.322-.008,3.141-.045c.758-.035,1.169-.161,1.443-.268.363-.141.622-.309.894-.581s.441-.531.582-.894c.106-.274.233-.685.267-1.443.038-.82.046-1.066.046-3.141s-.008-2.321-.046-3.141c-.035-.758-.161-1.169-.267-1.443h0Zm-6.059,8.574c-2.204,0-3.991-1.787-3.991-3.991s1.787-3.991,3.991-3.991,3.991,1.787,3.991,3.991-1.787,3.991-3.991,3.991h0Zm4.149-7.207c-.515,0-.933-.417-.933-.932s.417-.933.933-.933.933.418.933.933-.418.932-.933.932h0Zm0,0"
+              d="m12,0C5.373,0,0,5.373,0,12s5.373,12,12,12,12-5.373,12-12S18.627,0,12,0Zm3.063,19.232l-3.87-5.055-4.422,5.055h-2.458l5.733-6.554-6.046-7.91h5.062l3.494,4.621,4.043-4.621h2.455l-5.361,6.126,6.307,8.337h-4.937Z"
             />
           </svg>
         </a>
       </div>
-      <div class="modified">
-        <p id="copyright-year">
-          © * 2026 * Bruno Câmara * Minas Gerais, Brasil
-        </p>
-        <p id="lastModified">11/04/2026 17:02:52</p>
-      </div>
+      <p id="copyright-year"></p>
+      <p id="last-modified"></p>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
