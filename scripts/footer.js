@@ -1,11 +1,8 @@
-const copyrightText = document.querySelector("#copyright-year");
-const lastModified = document.querySelector("#lastModified");
+const copyrightDate = document.querySelector("#copyrightDate");
 const today = new Date();
 
-copyrightText.textContent = `© 🔥 ${new Intl.DateTimeFormat("en-US", {
+copyrightDate.innerHTML = `<p>© 🔥 ${new Intl.DateTimeFormat("en-US", {
   year: "numeric",
-}).format(today)} 🔥 Bruno Câmara 🔥 Minas Gerais, Brazil`;
-
-lastModified.textContent = document.lastModified;
-
-
+}).format(
+  today,
+)} 🔥 Bruno Câmara 🔥 Minas Gerais, Brazil<p>\n <p>LastModified: ${document.lastModified} </p>`;
