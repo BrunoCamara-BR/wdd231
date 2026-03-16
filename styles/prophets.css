@@ -1,0 +1,81 @@
+:root {
+  --color-font: #dadada;
+  --color-background: #005b7f;
+  --color-shadow-title: #d7ba71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  border-bottom: 2px solid var(--color-font);
+  margin-bottom: 14px;
+  box-shadow: 0px 10px 10px #d7ba71;
+  background-color: var(--color-background);
+  padding: 10px 0;
+  color: var(--color-shadow-title);
+  text-shadow: -1px 0px 0px var(--color-font);
+}
+
+main div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+main section {
+  background-color: var(--color-background);
+  max-width: 340px;
+  border-radius: 2px;
+  min-width: 100%;
+}
+
+main section h2 {
+  text-align: center;
+  color: var(--color-shadow-title);
+  text-shadow: -1px 0px 0px var(--color-font);
+  margin-top: 5px;
+}
+
+main section p {
+  text-align: center;
+  color: var(--color-font);
+  margin: 8px 0;
+}
+
+main img {
+  display: block;
+  max-width: 125px;
+  max-height: calc(125px / 0.7727); /*ratio*/
+  margin: 10px auto;
+  box-shadow: 0px 0px 40px #d7ba71;
+  border-radius: 4px;
+}
+
+main hr::after {
+  color: red;
+  content: "aa";
+  border: 10px solid #d7ba71;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: var(--color-background);
+  text-align: center;
+  color: var(--color-font);
+  font-family: "Roboto", sans-serif;
+}
