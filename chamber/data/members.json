@@ -1,0 +1,121 @@
+{
+  "members": [
+    {
+      "name": "Supermercados BH",
+      "phone": "(31) 3773-2000",
+      "address": "Av. Raquel Teixeira Viana, 1220, Canaã, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.supermercadosbh.com.br",
+      "imageURL": "https://centerminas.com/wp-content/uploads/2021/09/supermercadosbh_site.png",
+      "level": 3,
+      "description": "One of the largest supermarket chains in Minas Gerais, offering a wide variety of products and competitive prices."
+    },
+    {
+      "name": "Shopping Sete Lagoas",
+      "phone": "(31) 3775-4000",
+      "address": "Av. Otávio Campelo Ribeiro, 2801, Eldorado, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.shoppingsetelagoas.com.br",
+      "imageURL": "https://images.seeklogo.com/logo-png/20/2/shopping-sete-lagoas-logo-png_seeklogo-203933.png",
+      "level": 2,
+      "description": "The city's main shopping center, offering retail stores, a food court, and a cinema."
+    },
+    {
+      "name": "Auto Escola Sete Lagoas",
+      "phone": "(31) 3772-1234",
+      "address": "Rua Dr. Pena, 150, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.facebook.com/priscilaautoescola/?locale=pt_BR",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSWpDPF9Dc8VrLNzzPOvlEUZgOce4ST3LHg&s",
+      "level": 1,
+      "description": "Driver training center offering first-time licensing courses and refresher programs."
+    },
+    {
+      "name": "Padaria Pão Quente",
+      "phone": "(31) 3771-2233",
+      "address": "Rua Lassance Cunha, 98, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.instagram.com/p/DON2kZFjwEV/",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4pxPcYHWZ4qJhIfgYTZnmYBDSIVNdw1s3A&s",
+      "level": 1,
+      "description": "Traditional bakery offering freshly baked breads, pastries, and sweets."
+    },
+    {
+      "name": "Academia Corpo Ativo",
+      "phone": "(31) 3774-5566",
+      "address": "Av. Norte Sul, 450, Boa Vista, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.instagram.com/corpoativooficial",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjHcbRzdSsbznRqoiGo8WRZHkOq0AKqgFxyQ&s",
+      "level": 2,
+      "description": "Modern fitness center with a full range of exercise equipment and group classes."
+    },
+    {
+      "name": "Restaurante Sabor Mineiro",
+      "phone": "(31) 3773-8899",
+      "address": "Rua Santa Helena, 210, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.facebook.com/SaborMineiroAm",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9okCSfGY4K9Fz1ZcUu1Qbb4FOyFz1wJi0g&s",
+      "level": 2,
+      "description": "Local restaurant serving traditional Minas Gerais cuisine with a varied buffet."
+    },
+    {
+      "name": "Farmácia Drogasil - Sete Lagoas",
+      "phone": "(31) 3772-7788",
+      "address": "Av. Antônio Olinto, 300, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.drogasil.com.br",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTB3dr60TBb75Ue2NQKdsFeGyaYYIIVrsBSQ&s",
+      "level": 3,
+      "description": "National pharmacy chain with a large selection of health and personal care products."
+    },
+    {
+      "name": "Posto Petrobras Centro",
+      "phone": "(31) 3771-9900",
+      "address": "Av. Prefeito Alberto Moura, 50, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.postospetrobras.com.br",
+      "imageURL": "https://images.seeklogo.com/logo-png/18/2/petrobras-logo-png_seeklogo-182668.png",
+      "level": 1,
+      "description": "Fuel station offering gasoline, diesel, and a convenience store."
+    },
+    {
+      "name": "Hotel Atlas Sete Lagoas",
+      "phone": "(31) 3774-3000",
+      "address": "Av. Coronel Altino França, 324, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://hotelatlas.com.br",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2IBrrl6EC8M0KAaJTMr39iXIR1Pg5QMMZg&s",
+      "level": 3,
+      "description": "Comfortable hotel in a central location with modern amenities for travelers."
+    },
+    {
+      "name": "Clínica Odonto Mais",
+      "phone": "(31) 3772-4567",
+      "address": "Rua Professor Abeylard, 180, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.facebook.com/odontomaisodontologiaeeestetica",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQyFwzO_jzsnNlmw9hHaxsDb-yOvexFHeJ5A&s",
+      "level": 2,
+      "description": "Dental clinic offering specialized treatments and cosmetic dentistry services."
+    },
+    {
+      "name": "Loja Lojas CEM - Sete Lagoas",
+      "phone": "(31) 3771-1122",
+      "address": "Rua Dr. Avelar, 75, Centro, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.lojascem.com.br",
+      "imageURL": "https://static.todososfolhetos.com/images/shops/lojas-cem-thumbnail.png",
+      "level": 2,
+      "description": "Retailer of furniture and home appliances with competitive prices."
+    },
+    {
+      "name": "Pizzaria La Bella",
+      "phone": "(31) 3772-9988",
+      "address": "Av. Norte Sul, 890, Boa Vista, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://labellapizzaria.smallpage.com.br",
+      "imageURL": "https://static.expressodelivery.com.br/imagens/logos/43559/Expresso-Delivery_689c95c3253904fa4ded72f28ee825b6.png",
+      "level": 1,
+      "description": "Artisanal pizzeria offering a wide variety of pizza flavors and delivery service."
+    },
+    {
+      "name": "Oficina Mecânica Silva",
+      "phone": "(31) 3774-6677",
+      "address": "Rua Industrial, 120, Distrito Industrial, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.facebook.com/mecanicasilvasetelagoas",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ2O7Siwkdb-Qeo46Sa30S3TWwPt-pMfrR7A&s",
+      "level": 1,
+      "description": "Automotive repair shop offering general maintenance and vehicle service."
+    }
+  ]
+}
