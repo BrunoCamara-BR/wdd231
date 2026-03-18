@@ -1,13 +1,13 @@
 {
   "members": [
     {
-      "name": "Supermercados BH",
-      "phone": "(31) 3773-2000",
-      "address": "Av. Raquel Teixeira Viana, 1220, Canaã, Sete Lagoas, Minas Gerais, Brazil",
-      "website": "https://www.supermercadosbh.com.br",
-      "imageURL": "https://centerminas.com/wp-content/uploads/2021/09/supermercadosbh_site.png",
-      "level": 3,
-      "description": "One of the largest supermarket chains in Minas Gerais, offering a wide variety of products and competitive prices."
+      "name": "Oficina Mecânica Silva",
+      "phone": "(31) 3774-6677",
+      "address": "Rua Industrial, 120, Distrito Industrial, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.facebook.com/mecanicasilvasetelagoas",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ2O7Siwkdb-Qeo46Sa30S3TWwPt-pMfrR7A&s",
+      "level": 1,
+      "description": "Automotive repair shop offering general maintenance and vehicle service."
     },
     {
       "name": "Shopping Sete Lagoas",
@@ -32,7 +32,7 @@
       "phone": "(31) 3771-2233",
       "address": "Rua Lassance Cunha, 98, Centro, Sete Lagoas, Minas Gerais, Brazil",
       "website": "https://www.instagram.com/p/DON2kZFjwEV/",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4pxPcYHWZ4qJhIfgYTZnmYBDSIVNdw1s3A&s",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVDYDu1qJMUfkOdUuxy3_8wJWEkbCRkQKXQ&s",
       "level": 1,
       "description": "Traditional bakery offering freshly baked breads, pastries, and sweets."
     },
@@ -109,13 +109,13 @@
       "description": "Artisanal pizzeria offering a wide variety of pizza flavors and delivery service."
     },
     {
-      "name": "Oficina Mecânica Silva",
-      "phone": "(31) 3774-6677",
-      "address": "Rua Industrial, 120, Distrito Industrial, Sete Lagoas, Minas Gerais, Brazil",
-      "website": "https://www.facebook.com/mecanicasilvasetelagoas",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ2O7Siwkdb-Qeo46Sa30S3TWwPt-pMfrR7A&s",
-      "level": 1,
-      "description": "Automotive repair shop offering general maintenance and vehicle service."
+      "name": "Supermercados BH",
+      "phone": "(31) 3773-2000",
+      "address": "Av. Raquel Teixeira Viana, 1220, Canaã, Sete Lagoas, Minas Gerais, Brazil",
+      "website": "https://www.supermercadosbh.com.br",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoWxI1c577q4XGqQQRaQM_T2p7WVaO2vUmg&s",
+      "level": 3,
+      "description": "One of the largest supermarket chains in Minas Gerais, offering a wide variety of products and competitive prices."
     }
   ]
 }
