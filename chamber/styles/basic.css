@@ -461,6 +461,7 @@ th.website {
   top: 2%;
   left: 6%;
   color: #f3f3f3;
+  background-color: transparent;
   font-size: 1.2rem;
   text-shadow: 2px -2px 2px #2c3e50;
   font-weight: 700;
