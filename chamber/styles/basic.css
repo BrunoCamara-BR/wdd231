@@ -22,7 +22,7 @@
   --bg-title: #f3f3f3;
 
   /*hover and list table*/
-  --color-hover-list: #bebebe;
+  --color-hover-list: #a8d4ff;
 
   /****** level member ******/
   --primary-gold: #f9dba3;
@@ -63,7 +63,7 @@ body.dark {
   --bg-title: #20242c;
 
   /*hover and list table*/
-  --color-hover-list: #23354d;
+  --color-hover-list: #2d4564;
 
   /****** level member ******/
   --primary-gold: #876f3d;
@@ -460,9 +460,9 @@ th.website {
   position: absolute;
   top: 2%;
   left: 6%;
-  color: var(--color-hover-list);
+  color: #f3f3f3;
   font-size: 1.2rem;
-  text-shadow: 2px -2px 2px var(--color-font);
+  text-shadow: 2px -2px 2px #2c3e50;
   font-weight: 700;
 }
 
