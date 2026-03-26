@@ -22,7 +22,7 @@
   --bg-title: #f3f3f3;
 
   /*hover and list table*/
-  --color-hover-list: #dad9d9;
+  --color-hover-list: #bebebe;
 
   /****** level member ******/
   --primary-gold: #f9dba3;
@@ -549,6 +549,8 @@ th.website {
 .weather > p,
 .forecast p {
   text-align: center;
+  margin-bottom: 2px;
+  font-weight: 700;
 }
 
 .weather div {
@@ -564,19 +566,9 @@ th.website {
   font-weight: 700;
 }
 
-.weather > p,
-.forecast p {
-  font-weight: 700;
-}
-
 .weather > p span,
 .forecast p span {
   font-weight: normal;
-}
-
-.weather > p,
-.forecast p {
-  margin-bottom: 2px;
 }
 
 .weather div img {
