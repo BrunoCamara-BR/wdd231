@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "name": "Water Festival",
+      "date": "2026-04-10 12:00:00"
+    },
+    {
+      "name": "Handicraft Fair",
+      "date": "2026-04-11 10:00:00"
+    },
+    {
+      "name": "Seven Lagoas Night Run",
+      "date": "2026-04-16 20:00:00"
+    }
+  ]
+}

@@ -27,17 +27,96 @@
 
   .navigation ul {
     display: flex;
-    gap: 10px;
+    gap: 1px;
+  }
+
+  .navigation ul {
+    padding: 0;
   }
 
   .navigation ul li {
+    border-bottom: 1px solid var(--color-bd);
     border-bottom: none;
-    padding: 5px;
+    padding: 10px 15px;
   }
+
+  /********* DIRECTORY **********/
   /*********** MAIN *********/
 
   .buttons-view {
     justify-content: left;
+  }
+
+  /*********** HOME ************/
+  /*********** MAIN *********/
+
+  .hero p {
+    top: 1%;
+    left: 6%;
+    font-size: 1.4rem;
+  }
+
+  .hero button {
+    bottom: 20%;
+    left: 20%;
+  }
+
+  .top {
+    position: relative;
+    top: -20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    height: auto;
+  }
+
+  .events {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-bottom-left-radius: 10px;
+  }
+
+  .weather {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .weather,
+  .weather h2 {
+    border-radius: 0;
+  }
+
+  .forecast {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border-bottom-right-radius: 10px;
+  }
+
+  .forecast div {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .forecast div p {
+    margin-top: 10px;
+  }
+
+  .forecast,
+  .forecast h2 {
+    border-top-right-radius: 10px;
+  }
+
+  .top dd {
+    padding-bottom: 8px;
+    /* border-bottom: 1px solid var(--color-bd); */
+  }
+
+  .top dd:last-child {
+    padding-bottom: 5px;
+    border-bottom: none;
   }
 
   /******** FOOTER *******/
@@ -49,5 +128,65 @@
   footer p span {
     padding: 0px;
   }
+
+  /******** MAIN ******/
+
+  .footer-main .flex {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .social svg {
+    margin: 4px;
+  }
+
+  .footer-main p {
+    font-size: 1.2rem;
+  }
 }
 
+@media only screen and (min-width: 46.87rem) {
+  /*********** HOME ************/
+  /*********** MAIN *********/
+  .hero p {
+    top: 1%;
+    left: 6%;
+    font-size: 1.6rem;
+  }
+
+  .hero button {
+    bottom: 35%;
+    left: 20%;
+  }
+
+  .top {
+    top: -30px;
+  }
+
+  .top section {
+    width: 15rem;
+  }
+  .weather div img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media only screen and (min-width: 62.5rem) {
+  /*********** HOME ************/
+  /*********** MAIN *********/
+  .hero p {
+    top: 15%;
+    left: 6%;
+    font-size: 2rem;
+  }
+
+  .hero button {
+    bottom: 30%;
+    left: 20%;
+  }
+
+  .top section {
+    width: 20rem;
+  }
+}

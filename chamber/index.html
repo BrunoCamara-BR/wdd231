@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sete Lagoas Chamber of Commerce Directory</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Bruno Câmara dos Santos" />
+    <meta
+      name="description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:title"
+      content="Sete Lagoas Chamber of Commerce Directory"
+    />
+    <meta
+      property="og:description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:image"
+      content="https://brunocamara-br.github.io/wdd231/chamber/images/og.image.directory.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://brunocamara-br.github.io/wdd231/chamber/directory.html"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLING -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/basic.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/navigation.js" defer></script>
+    <script type="module" src="./scripts/home.mjs"></script>
+    <script type="module" src="./scripts/event.mjs"></script>
+    <script type="module" src="./scripts/footer-main.mjs"></script>
+    <script type="module" src="./scripts/footer.mjs"></script>
+    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/dark-mode.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-bar">
+        <img
+          src="images/logo.svg"
+          alt="Sete Lagoas Chamber of Commerce logo"
+          width="44"
+          height="44"
+        />
+        <span>Sete lagoas Chamber of commerce</span>
+        <a href="#" id="toggle-theme" class="theme"></a>
+
+        <button
+          id="hambuguer"
+          class="hambuger-button"
+          aria-label="Menu button"
+        ></button>
+      </div>
+      <nav id="nav-menu" class="navigation">
+        <ul>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="home">Home</h1>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/hero-big-large.webp"
+            media="(min-width: 900px)"
+          />
+          <source srcset="images/hero-large.webp" media="(min-width: 700px)" />
+          <source srcset="images/hero-medium.webp" media="(min-width: 500px)" />
+
+          <img src="images/hero-small.webp" alt="" width="336" height="144" />
+        </picture>
+
+        <p>Welcome to <br />Sete Lagoas Chamber of Commerce</p>
+        <button>Join Us!</button>
+      </div>
+
+      <div class="top">
+        <section id="event" class="events">
+          <h2>Events</h2>
+        </section>
+        <section class="weather">
+          <h2>Current Weather</h2>
+          <div>
+            <img id="weather-icon" src="#" alt="" width="50" height="50" />
+            <p id="current-temp">00º</p>
+          </div>
+          <p><span id="description">---</span></p>
+          <p>Hight: <span id="hight">13 mhp</span></p>
+          <p>Low: <span id="low">13 mhp</span></p>
+          <p>Humidity: <span id="humidity">38%</span></p>
+          <p>Sunrise: <span id="sunrise">6:20 am</span></p>
+          <p>Sunset: <span id="sunset">7:45 pm</span></p>
+        </section>
+        <section class="forecast">
+          <h2>Weather Forecast</h2>
+          <div id="forecast-days"></div>
+        </section>
+      </div>
+      <h2>Business</h2>
+      <div class="home cards-container grid" id="member-container"></div>
+      <a href="directory.html" class="button-business">View All Business</a>
+    </main>
+    <footer class="footer-main"></footer>
+  </body>
+</html>
