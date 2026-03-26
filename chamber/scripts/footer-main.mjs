@@ -1,4 +1,5 @@
 const footer = document.querySelector("footer");
+footer.innerHTML = "";
 
 const flex = document.createElement("div");
 flex.classList.add("flex");
