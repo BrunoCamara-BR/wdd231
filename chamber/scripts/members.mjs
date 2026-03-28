@@ -1,4 +1,4 @@
-export const memberList = async (number) => {
+export const memberList = async (number, vip) => {
   // read the json and return it in array.
   // parameters: number = number of random member for output
   // output: array of members
@@ -7,7 +7,13 @@ export const memberList = async (number) => {
     const membersfetch = await fetch(src);
     const jsonData = await membersfetch.json();
     let data = [];
-    data = await jsonData.members;
+    if (vip)
+      data = jsonData.members.filter((item) => {
+        return item.level >= 2;
+      });
+    else {
+      data = await jsonData.members;
+    }
     if (membersfetch.ok) {
       if (number > 0) {
         let randomData = [];

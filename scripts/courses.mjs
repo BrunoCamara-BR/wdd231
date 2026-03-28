@@ -2,7 +2,7 @@ const courseList = document.getElementById("courses");
 const filter = document.querySelector("#filter");
 const coursesInfo = document.querySelector("#courses-info");
 
-const courses = [
+export const courses = [
   {
     subject: "CSE",
     number: 110,

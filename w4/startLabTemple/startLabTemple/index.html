@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Lab Start File" />
+    <meta name="author" content="Paul Cheney" />
+
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <title>Web Lab Start File</title>
+  </head>
+
+  <body>
+    <header>
+      <span>Company</span>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <button popovertarget="testID">test</button>
+
+      <dialog id="testID" popover>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+          cum delectus ipsam, sit explicabo ratione, pariatur repellat officia
+          fuga neque voluptatem distinctio hic dicta quasi consequatur!
+          Doloribus ea sapiente eum.
+        </p>
+        <button popovertarget="testID" popovertargetaction="hide">X</button>
+      </dialog>
+      <h1>Page Title Here</h1>
+      <div id="showHere"></div>
+
+      <!-- One single dialog for all temples -->
+      <dialog id="mydialog">
+        <div>
+          <h2>Sample Title</h2>
+          <button>X</button>
+        </div>
+        <p></p>
+      </dialog>
+    </main>
+
+    <footer>
+      <p>&copy; Web Labs</p>
+    </footer>
+
+    <script type="module" src="js/scripts.js"></script>
+  </body>
+</html>
