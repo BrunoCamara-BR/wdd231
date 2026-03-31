@@ -163,6 +163,18 @@
               autocomplete="organization"
               required
             />
+            <label for="level">Membership Level</label>
+            <select name="level" id="level">
+              <option value="" selected hidden>
+                Please Select Please Select &#9662;
+              </option>
+              <option value="np">Not profit organization</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+
+            <!-- 
             <fieldset>
               <legend>Membership Level</legend>
 
@@ -185,7 +197,7 @@
                 <input type="radio" name="level" value="gold" />
                 Gold Membership
               </label>
-            </fieldset>
+            </fieldset> -->
 
             <label for="description">Organization Description:</label>
             <textarea
