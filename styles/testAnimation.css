@@ -1,0 +1,29 @@
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: beige;
+  border: 5px solid;
+  border-color: #000 transparent #000 transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem blue;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+.box::after {
+  content: "⚙️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1s ease-in-out;
+}
+
+.box:hover {
+  transform: rotate(360deg);
+}
+
+.box:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sete Lagoas Chamber of Commerce Join</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Bruno Câmara dos Santos" />
+    <meta
+      name="description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:title"
+      content="Sete Lagoas Chamber of Commerce Directory"
+    />
+    <meta
+      property="og:description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:image"
+      content="https://brunocamara-br.github.io/wdd231/chamber/images/og.image.directory.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://brunocamara-br.github.io/wdd231/chamber/directory.html"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLING -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/basic.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/join.js" defer></script>
+    <script type="module" src="./scripts/footer.mjs"></script>
+    <script src="./scripts/dark-mode.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-bar">
+        <img
+          src="images/logo.svg"
+          alt="Sete Lagoas Chamber of Commerce logo"
+          width="44"
+          height="44"
+        /><span>Sete lagoas Chamber of commerce</span>
+
+        <a href="#" id="toggle-theme" class="theme"></a>
+        <button
+          id="hambuguer"
+          class="hambuger-button"
+          aria-label="Menu button"
+        ></button>
+      </div>
+      <nav id="nav-menu" class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="current"><a href="join.html">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Join</h1>
+      <dialog
+        id="dialog"
+        closedby="any"
+        aria-labelledby="dialog-title"
+      ></dialog>
+      <div class="join-main">
+        <div class="info-membership">
+          <section id="button-np">
+            <p>Not Profit membership level</p>
+            <button>Learn More</button>
+          </section>
+          <section id="button-bronze">
+            <p>Bronze membership level</p>
+            <button>Learn More</button>
+          </section>
+          <section id="button-silver">
+            <p>Silver membership level</p>
+            <button>Learn More</button>
+          </section>
+          <section id="button-gold">
+            <p>Gold membership level</p>
+            <button>Learn More</button>
+          </section>
+        </div>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Person</legend>
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              title="type your first name"
+              autocomplete="given-name"
+              required
+            />
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              title="enter your last name"
+              autocomplete="family-name"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Organization</legend>
+            <label for="organization-title">Organization Title: </label>
+            <input
+              type="text"
+              id="organization-title"
+              name="organization-title"
+              autocomplete="organization-title"
+              minlength="7"
+              pattern="^[A-Za-z -]{7,}$"
+              title="Use at least 7 letters, spaces, or hyphens only"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              title="enter an email"
+              autocomplete="email"
+              placeholder="john@hotmail.com"
+              required
+            />
+            <label for="phone">Phone number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              title="Enter your phone number"
+              autocomplete="tel"
+              placeholder="123-456-789"
+            />
+            <label for="organization-name">Organization Name:</label>
+            <input
+              type="text"
+              id="organization-name"
+              name="organization-name"
+              title="Enter the Organization Name"
+              autocomplete="organization"
+              required
+            />
+            <p>Membership Level:</p>
+            <div class="radio">
+              <input
+                type="radio"
+                name="level"
+                value="non profit organizations"
+                id="np-organization"
+              />
+              <label for="np-organization">Not profit organization</label>
+
+              <input
+                type="radio"
+                name="level"
+                value="bronze"
+                id="bronze-member"
+              />
+              <label for="bronze-member">Bronze</label>
+
+              <input
+                type="radio"
+                name="level"
+                value="silver"
+                id="silver-member"
+              />
+              <label for="silver-member">Silver</label>
+
+              <input type="radio" name="level" value="gold" id="gold-member" />
+              <label for="gold-member">Gold</label>
+            </div>
+
+            <label for="description">Organization Description:</label>
+            <textarea
+              id="description"
+              name="description"
+              title="Enter the organization description"
+            ></textarea>
+            <input type="hidden" id="timestamp" name="timestamp" />
+          </fieldset>
+          <button type="submit">Join my organization</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

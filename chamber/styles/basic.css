@@ -31,6 +31,9 @@
   --primary-silver: #c0c0c0;
   --second-silver: #22313f;
 
+  --primary-bronze: #e6c29a;
+  --second-bronze: #3b2612;
+
   --primary-member: #bcccdc;
   --second-member: #2d383c;
 
@@ -71,6 +74,9 @@ body.dark {
 
   --primary-silver: #7d7d7d;
   --second-silver: #c0c0c0;
+
+  --primary-bronze: #6a4a2f;
+  --second-bronze: #f2d2a9;
 
   --primary-member: #27639f;
   --second-member: #bcccdc;
@@ -168,6 +174,7 @@ header span,
 .navigation ul li {
   border-bottom: 1px solid var(--color-bd);
   padding: 14px 0 12px 5px;
+  transition: background-color 0.5s;
 }
 
 .navigation ul li:hover {
@@ -607,6 +614,203 @@ th.website {
 
 .button-business:hover {
   background-color: var(--color-link-current);
+}
+
+/*******************************************************/
+/******************** JOIN ************************/
+/*******************************************************/
+dialog:modal {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-font);
+  border-radius: 10px;
+  color: var(--color-font);
+}
+
+dialog:modal button {
+  color: var(--color-font);
+  border-radius: 5px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: var(--bg-body);
+  border: 1px solid var(--color-bd);
+}
+
+dialog:modal button:hover {
+  color: var(--color-link-current);
+}
+
+dialog:modal::backdrop {
+  background-color: var(--bg-body);
+  opacity: 0.8;
+}
+
+.info-membership {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--color-font);
+}
+
+/*ANIMATION*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-membership section {
+  opacity: 0;
+  text-align: center;
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-bd);
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.info-membership section button {
+  color: var(--color-font);
+  border-radius: 5px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.info-membership section button:hover {
+  color: var(--color-link-current);
+}
+
+#button-np button {
+  background-color: var(--primary-member);
+  border: 1px solid var(--second-member);
+}
+#button-bronze button {
+  background-color: var(--primary-bronze);
+  border: 1px solid var(--second-bronze);
+}
+#button-silver button {
+  background-color: var(--primary-silver);
+  border: 1px solid var(--second-silver);
+}
+#button-gold button {
+  background-color: var(--primary-gold);
+  border: 1px solid var(--second-gold);
+}
+
+.info-membership section button {
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 0 10px;
+  color: var(--color-font);
+}
+
+form legend {
+  padding: 0 10px;
+}
+
+fieldset {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-bd);
+}
+
+form input {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid var(--color-bd);
+  color: var(--color-font);
+  background-color: var(--bg-header-footer);
+}
+
+label {
+  margin: 15px 0 5px 0;
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: 22px auto;
+  align-items: center;
+  column-gap: 5px;
+}
+
+form p {
+  margin: 15px 0 5px 0;
+}
+
+.radio label {
+  margin: 0;
+  font-size: 22px;
+  padding: 10px 0 10px 0;
+  margin-left: 0x;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  height: 22px;
+}
+
+textarea {
+  padding: 5px;
+  min-height: 50px;
+  border: 1px solid var(--color-bd);
+  color: var(--color-font);
+  background-color: var(--bg-header-footer);
+}
+
+form button {
+  display: block;
+  margin: 10px auto;
+  color: var(--color-font);
+  background-color: var(--primary-gold);
+  font-weight: 700;
+  padding: 8px 14px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--second-gold);
+  box-shadow: 2px 1px 20px var(--color-bd);
+  cursor: pointer;
+}
+
+form button:hover {
+  color: var(--color-link-current);
+}
+
+/*******************************************************/
+/******************** THANK YOU ************************/
+/*******************************************************/
+
+/********** MAIN **********/
+.thankyou {
+  color: var(--color-font);
+}
+p.thankyou {
+  text-align: center;
+  font-weight: 700;
+  color: green;
+  margin: 2rem 0;
+}
+
+section.thankyou {
+  margin: 0 10px;
+  border-top: 1px solid var(--color-bd);
+}
+section.thankyou p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.thankyou dl {
+  border-bottom: 1px solid var(--color-bd);
 }
 
 /*************** FOOTER *************/

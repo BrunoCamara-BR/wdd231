@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sete Lagoas Chamber of Commerce Directory</title>
+    <title>Sete Lagoas Chamber of Commerce Join</title>
     <link rel="icon" href="favicon.ico" />
     <meta name="author" content="Bruno Câmara dos Santos" />
     <meta
@@ -42,7 +42,7 @@
 
     <!-- SCRIPTS -->
     <script src="./scripts/navigation.js" defer></script>
-    <script type="module" src="./scripts/directory.mjs"></script>
+    <script src="./scripts/thankyou.js" defer></script>
     <script type="module" src="./scripts/footer.mjs"></script>
     <script src="./scripts/dark-mode.js" defer></script>
   </head>
@@ -67,41 +67,18 @@
       <nav id="nav-menu" class="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="#">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="current"><a href="join.html">Join</a></li>
           <li><a href="#">Discover</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Directory</h1>
-      <div class="buttons-view">
-        <a href="#" id="grid-button"
-          ><img
-            src="images/grid.svg"
-            alt="Grid view button"
-            aria-label="Grid view button"
-            width="10"
-            height="10"
-          />
-          <span>Grid view</span>
-        </a>
-        <a href="#" id="list-button"
-          ><img
-            src="images/list.svg"
-            alt="List view button"
-            aria-label="List view button"
-            width="10"
-            height="10"
-          />
-          <span>List view</span></a
-        >
-      </div>
-      <div class="cards-block">
-        <h2 id="current-mode">GRID</h2>
+      <h1>Join</h1>
+      <p class="thankyou">Thank you for you register! 🥳</p>
 
-        <div class="cards-container grid" id="member-container"></div>
-      </div>
+      <section class="thankyou">
+      </section>
     </main>
     <footer></footer>
   </body>

@@ -119,6 +119,31 @@
     border-bottom: none;
   }
 
+  /*********** JOIN ************/
+  /*********** MAIN *********/
+
+  .join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-membership {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--color-font);
+    justify-content: center;
+  }
+
+  .info-membership {
+    grid-column: 2/3;
+  }
+  form {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
   /******** FOOTER *******/
 
   footer p {

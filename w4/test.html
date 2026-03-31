@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>:modal Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      dialog {
+        padding: 20px;
+        border: none;
+        border-radius: 8px;
+      }
+
+      /* This style applies ONLY when the dialog is modal */
+      dialog:modal {
+        background-color: #3d1e1e;
+        border: 2px solid #333;
+      }
+
+      /* Optional: style backdrop when modal is active */
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      button {
+        padding: 10px 15px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modal Demo</h1>
+    <button onclick="openModal()">Open Modal</button>
+
+    <dialog id="myDialog">
+      <p>This is a modal dialog.</p>
+      <button onclick="closeModal()">Close</button>
+    </dialog>
+
+    <script>
+      const dialog = document.getElementById("myDialog");
+
+      function openModal() {
+        dialog.showModal(); // makes it modal → activates :modal
+      }
+
+      function closeModal() {
+        dialog.close();
+      }
+    </script>
+  </body>
+</html>
