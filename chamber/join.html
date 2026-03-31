@@ -163,16 +163,29 @@
               autocomplete="organization"
               required
             />
-            <label for="level">Membership Level</label>
-            <select name="level" id="level" required>
-              <!-- <option value="" selected hidden>
-                Please Select Please Select &#9662;
-              </option> -->
-              <option value="np">Not profit organization</option>
-              <option value="bronze">Bronze</option>
-              <option value="silver">Silver</option>
-              <option value="gold">Gold</option>
-            </select>
+            <fieldset>
+              <legend>Membership Level</legend>
+
+              <label>
+                <input type="radio" name="level" value="np" required />
+                NP Membership (Non-Profit, no fee)
+              </label>
+
+              <label>
+                <input type="radio" name="level" value="bronze" />
+                Bronze Membership
+              </label>
+
+              <label>
+                <input type="radio" name="level" value="silver" />
+                Silver Membership
+              </label>
+
+              <label>
+                <input type="radio" name="level" value="gold" />
+                Gold Membership
+              </label>
+            </fieldset>
 
             <label for="description">Organization Description:</label>
             <textarea

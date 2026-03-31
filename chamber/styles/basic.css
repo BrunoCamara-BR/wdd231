@@ -736,16 +736,6 @@ form p {
   margin: 15px 0 5px 0;
 }
 
-select {
-  appearance: none;
-  color: var(--color-font);
-  border: 1px solid var(--color-bd);
-}
-
-select:focus {
-  outline: none;
-}
-
 input[type="radio"] {
   cursor: pointer;
   height: 22px;
