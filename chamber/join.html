@@ -79,11 +79,7 @@
     </header>
     <main>
       <h1>Join</h1>
-      <dialog
-        id="dialog"
-        closedby="any"
-        aria-labelledby="dialog-title"
-      ></dialog>
+      <dialog id="dialog" closedby="any"></dialog>
       <div class="join-main">
         <div class="info-membership">
           <section id="button-np">
@@ -156,6 +152,7 @@
               title="Enter your phone number"
               autocomplete="tel"
               placeholder="123-456-789"
+              required
             />
             <label for="organization-name">Organization Name:</label>
             <input
@@ -171,8 +168,9 @@
               <input
                 type="radio"
                 name="level"
-                value="non profit organizations"
+                value="np"
                 id="np-organization"
+                required
               />
               <label for="np-organization">Not profit organization</label>
 

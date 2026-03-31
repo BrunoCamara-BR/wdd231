@@ -619,14 +619,14 @@ th.website {
 /*******************************************************/
 /******************** JOIN ************************/
 /*******************************************************/
-dialog:modal {
+dialog {
   background-color: var(--bg-card);
   border: 1px solid var(--color-font);
   border-radius: 10px;
   color: var(--color-font);
 }
 
-dialog:modal button {
+dialog button {
   color: var(--color-font);
   border-radius: 5px;
   padding: 12px 50px;
@@ -636,11 +636,11 @@ dialog:modal button {
   border: 1px solid var(--color-bd);
 }
 
-dialog:modal button:hover {
+dialog button:hover {
   color: var(--color-link-current);
 }
 
-dialog:modal::backdrop {
+dialog::backdrop {
   background-color: var(--bg-body);
   opacity: 0.8;
 }
@@ -680,6 +680,7 @@ dialog:modal::backdrop {
   padding: 12px 50px;
   cursor: pointer;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .info-membership section button:hover {
@@ -701,10 +702,6 @@ dialog:modal::backdrop {
 #button-gold button {
   background-color: var(--primary-gold);
   border: 1px solid var(--second-gold);
-}
-
-.info-membership section button {
-  margin-bottom: 10px;
 }
 
 form {
@@ -750,7 +747,6 @@ form p {
   margin: 0;
   font-size: 22px;
   padding: 10px 0 10px 0;
-  margin-left: 0x;
   cursor: pointer;
 }
 

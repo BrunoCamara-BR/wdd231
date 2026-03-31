@@ -58,6 +58,7 @@ const buttonGold = document.querySelector("#button-gold button");
 const dialog = document.querySelector("#dialog");
 
 function dialogDisplay(level) {
+  dialog.setAttribute("aria-labelledby", "dialog-title");
   dialog.innerHTML = level;
   document.querySelector("#dialog button").addEventListener("click", () => {
     dialog.close();
