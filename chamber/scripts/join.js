@@ -1,4 +1,4 @@
-const levelInfo = {
+const level = {
   np: `
     <h2 id="dialog-title">NP Membership</h2>
   <p>Best for nonprofit organizations with no membership fee.</p>
@@ -67,16 +67,16 @@ function dialogDisplay(level) {
 }
 
 buttonNP.addEventListener("click", () => {
-  dialogDisplay(levelInfo.np);
+  dialogDisplay(level.np);
 });
 buttonBronze.addEventListener("click", () => {
-  dialogDisplay(levelInfo.bronze);
+  dialogDisplay(level.bronze);
 });
 buttonSilver.addEventListener("click", () => {
-  dialogDisplay(levelInfo.silver);
+  dialogDisplay(level.silver);
 });
 buttonGold.addEventListener("click", () => {
-  dialogDisplay(levelInfo.gold);
+  dialogDisplay(level.gold);
 });
 
 const timestamp = document.querySelector("#timestamp");

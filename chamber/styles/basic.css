@@ -732,22 +732,18 @@ label {
   margin: 15px 0 5px 0;
 }
 
-.radio {
-  display: grid;
-  grid-template-columns: 22px auto;
-  align-items: center;
-  column-gap: 5px;
-}
-
 form p {
   margin: 15px 0 5px 0;
 }
 
-.radio label {
-  margin: 0;
-  font-size: 22px;
-  padding: 10px 0 10px 0;
-  cursor: pointer;
+select {
+  appearance: none;
+  color: var(--color-font);
+  border: 1px solid var(--color-bd);
+}
+
+select:focus {
+  outline: none;
 }
 
 input[type="radio"] {
