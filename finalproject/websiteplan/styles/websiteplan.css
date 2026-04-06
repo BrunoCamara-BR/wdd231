@@ -112,3 +112,7 @@ footer p {
 .inter {
   font-family: var(--font-general);
 }
+
+img {
+  display: block;
+}
