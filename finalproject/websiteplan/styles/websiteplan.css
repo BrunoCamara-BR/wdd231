@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Theme of the project*/
+  --bg-color: #fefefe; /*Background*/
+  --bg-section-color: #ecf5fc; /*Background*/
+  --font-color: #161f2d; /*Navigation Font*/
+  --font-link: #1f45c1; /*Wayfiding/links*/
+  --font-general:
+    "Inter", sans-serif; /*Font "Inter" for button, nav text, titles, footer.*/
+  --font-members:
+    "Roboto Condensed", sans-serif; /* Font "Roboto Condensed" for member info, table*/
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-general);
+  margin: 10px;
+}
+
+header,
+main,
+footer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 1px solid var(--font-color);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+section {
+  background-color: var(--bg-section-color);
+}
+
+dd p {
+  font-weight: 700;
+}
+
+section,
+dt {
+  padding: 5px;
+}
+
+dt {
+  background-color: var(--bg-color);
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+}
+
+dd {
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  margin: 5px 0 15px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+dd p {
+  text-align: center;
+  margin: 5px 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-link);
+  font-weight: 500;
+}
+
+figure {
+  margin-top: 5px;
+  border: 1px solid var(--font-color);
+}
+
+figcaption {
+  text-align: center;
+  margin: 5px;
+}
+
+figure img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: var(--bg-section-color);
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+}
+
+.roboto-condensed {
+  font-family: var(--font-members);
+}
+
+.inter {
+  font-family: var(--font-general);
+}
