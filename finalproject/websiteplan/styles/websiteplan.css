@@ -116,3 +116,7 @@ footer p {
 img {
   display: block;
 }
+
+main > p {
+  margin: 5px 0 10px;
+}
