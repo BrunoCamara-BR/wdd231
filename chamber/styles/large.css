@@ -153,12 +153,13 @@
     max-width: 500px;
     overflow: hidden;
     display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "image name"
       "image description"
       "address address"
       "button button";
-    gap: 10px;
   }
 
   .discover-cards-container button {
@@ -172,6 +173,7 @@
   }
 
   .discover-cards-container img {
+    width: 100%;
     transition:
       transform 0.3s ease,
       filter 0.3s ease;
