@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
   /********** GLOBAL ***********/
   header,
   main,
@@ -144,6 +144,43 @@
     grid-row: 1/2;
   }
 
+  /*******************************************************/
+  /******************** DISCOVER ************************/
+  /*******************************************************/
+
+  /********** MAIN **********/
+  .discover-cards-container section {
+    max-width: 500px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+      "image name"
+      "image description"
+      "address address"
+      "button button";
+    gap: 10px;
+  }
+
+  .discover-cards-container button {
+    margin: 0 auto;
+    width: 400px;
+    height: 44px;
+  }
+
+  .discover-cards-container figure {
+    overflow: hidden;
+  }
+
+  .discover-cards-container img {
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
+  }
+  .discover-cards-container img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
   /******** FOOTER *******/
 
   footer p {
@@ -197,7 +234,7 @@
   }
 }
 
-@media only screen and (min-width: 62.5rem) {
+@media only screen and (min-width: 64rem) {
   /*********** HOME ************/
   /*********** MAIN *********/
   .hero p {
@@ -213,5 +250,17 @@
 
   .top section {
     width: 20rem;
+  }
+
+  /*******************************************************/
+  /******************** DISCOVER ************************/
+  /*******************************************************/
+
+  /********** MAIN **********/
+  .discover-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 0 10px;
   }
 }

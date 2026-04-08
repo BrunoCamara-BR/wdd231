@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sete Lagoas Chamber of Commerce Discover</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Bruno Câmara dos Santos" />
+    <meta
+      name="description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:title"
+      content="Sete Lagoas Chamber of Commerce Discover"
+    />
+    <meta
+      property="og:description"
+      content="Promotes business opportunities to find services or products in the local area."
+    />
+    <meta
+      property="og:image"
+      content="https://brunocamara-br.github.io/wdd231/chamber/images/og.image.directory.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://brunocamara-br.github.io/wdd231/chamber/discover.html"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- preload the first image to get a better performance-->
+    <link rel="preload" as="image" href="./images/places/lagoa-paulino.webp" />
+
+    <!-- STYLING -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/basic.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/navigation.js" defer></script>
+    <script type="module" src="./scripts/discover.js"></script>
+    <script type="module" src="./scripts/lastVisit.js"></script>
+    <script type="module" src="./scripts/footer.mjs"></script>
+    <script src="./scripts/dark-mode.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-bar">
+        <img
+          src="images/logo.svg"
+          alt="Sete Lagoas Chamber of Commerce logo"
+          width="44"
+          height="44"
+        /><span>Sete lagoas Chamber of commerce</span>
+
+        <a
+          href="#"
+          id="toggle-theme"
+          class="theme"
+          aria-label="toggle theme"
+        ></a>
+        <button
+          id="hambuguer"
+          class="hambuger-button"
+          aria-label="Menu button"
+        ></button>
+      </div>
+      <nav id="nav-menu" class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="current"><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Discover</h1>
+      <p id="last-visit-msg"></p>
+      <div class="discover-cards-container" id="discover-cards"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
