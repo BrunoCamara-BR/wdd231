@@ -1,40 +1,50 @@
-const footer = document.querySelector("footer");
-footer.innerHTML = "";
+export const social = document.createElement("div");
+social.classList.add("social");
 
-const flex = document.createElement("div");
-flex.classList.add("flex");
-
-const chamberInfo = document.createElement("div");
-const p1 = document.createElement("p");
-const p2 = document.createElement("p");
-const p3 = document.createElement("p");
-const p4 = document.createElement("p");
-const p5 = document.createElement("p");
-
-chamberInfo.classList.add("chamberInfo");
-
-p1.textContent = "Sete lagoas Chamber of Commerce";
-p2.textContent = "823 Jequitaí St.";
-p3.textContent = "Sete Lagoas, MG 35701-126";
-p4.textContent = "brunocamarag5@gmail.com";
-p5.textContent = "+55 (31) 99133-3597";
-
-chamberInfo.appendChild(p1);
-chamberInfo.appendChild(p2);
-chamberInfo.appendChild(p3);
-chamberInfo.appendChild(p4);
-chamberInfo.appendChild(p5);
-
-flex.appendChild(chamberInfo);
-
-// social
-const div = document.createElement("div");
+const email = document.createElement("a");
+const whatsapp = document.createElement("a");
 const github = document.createElement("a");
 const linkedin = document.createElement("a");
 const facebook = document.createElement("a");
 const instagram = document.createElement("a");
 
-div.classList.add("social");
+email.setAttribute(
+  "href",
+  "mailto:brunocamarag5@gmail.com?subject=Contato&body=Hello Bruno,",
+);
+email.setAttribute("target", "_blank");
+email.innerHTML = `<svg role="img"
+            aria-labelledby="email"
+            id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+            width="44"
+            height="44"
+            >
+            <title id="email">Email logo</title>
+            <path d="m256 0c141.385 0 256 114.615 256 256s-114.615 256-256 256-256-114.615-256-256 114.615-256 256-256zm162.5 355.241v-190.263l-95.137 95.131zm-304.676 3.876h284.358l-86.908-86.908-33.123 33.118a8.563 8.563 0 0 1 -6.05 2.5h-32.2a8.553 8.553 0 0 1 -6.051-2.5l-33.122-33.118-86.908 86.908zm-20.324-194.145v190.274l95.137-95.137zm312.906-12.089h-300.806l137.844 137.844h25.117z" fill-rule="evenodd"/></svg>`;
+social.appendChild(email);
+
+whatsapp.setAttribute("href", "https://wa.me/5531991333597?text=Hello%20Bruno");
+whatsapp.setAttribute("target", "_blank");
+whatsapp.innerHTML = `<svg 
+            role="img"
+            aria-labelledby="whatsapp"
+			version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+	 width="44"
+            height="44">
+			<title id="whatsapp">Whatsapp logo</title>
+	<g>
+		<path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456
+			C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504
+			c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792
+			c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184
+			c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392
+			c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352
+			c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024
+			c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568
+			c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/>
+	</g></svg>`;
+social.appendChild(whatsapp);
 
 github.setAttribute("href", "https://github.com/BrunoCamara-BR/");
 github.setAttribute("target", "_blank");
@@ -80,7 +90,7 @@ github.innerHTML = `<svg
               />
             </g>
           </svg>`;
-div.appendChild(github);
+social.appendChild(github);
 
 linkedin.setAttribute("href", "https://www.linkedin.com/in/brucamara/");
 linkedin.setAttribute("target", "_blank");
@@ -105,7 +115,7 @@ linkedin.innerHTML = `<svg
               d="m12,0h0C5.373,0,0,5.373,0,12h0c0,6.627,5.373,12,12,12h0c6.627,0,12-5.373,12-12h0C24,5.373,18.627,0,12,0Zm7.037,18.056c-.008.578-.483,1.042-1.062,1.034H5.76c-.577.006-1.051-.457-1.058-1.034V5.79c.007-.577.48-1.04,1.058-1.033h12.215c.578-.009,1.053.454,1.062,1.032v12.267Zm1.65,1.136c-.54.005-.982-.428-.987-.968-.005-.539.428-.981.968-.987h.019c.532.005.963.436.968.968.005.539-.428.981-.968.987Zm-6.32-9.232c-.823-.03-1.596.394-2.012,1.105h-.028v-.935h-2.039v6.84h2.124v-3.383c0-.893.169-1.756,1.276-1.756,1.09,0,1.104,1.021,1.104,1.814v3.326h2.124v-3.752c0-1.843-.396-3.258-2.549-3.258h0Zm-7.54,7.01h2.126v-6.84h-2.126v6.84Zm1.064-10.24c-.681,0-1.233.552-1.233,1.233,0,.681.552,1.232,1.233,1.232s1.233-.552,1.233-1.233c0-.681-.552-1.233-1.233-1.232Z"
             />
           </svg>`;
-div.appendChild(linkedin);
+social.appendChild(linkedin);
 
 facebook.setAttribute("href", "https://www.facebook.com/brunocamarag");
 facebook.setAttribute("target", "_blank");
@@ -130,30 +140,4 @@ facebook.innerHTML = `<svg
               />
             </g>
           </svg>`;
-div.appendChild(facebook);
-
-instagram.setAttribute("href", "https://www.instagram.com/bru.camara/");
-instagram.setAttribute("target", "_blank");
-instagram.innerHTML = `<svg
-            role="img"
-            aria-labelledby="instagram"
-            xmlns="http://www.w3.org/2000/svg"
-            id="Capa_39"
-            data-name="Capa 39"
-            viewBox="0 0 24 24"
-            width="44"
-            height="44"
-          >
-            <title id="instagram">Instagram logo</title>
-            <path
-              d="m14.502,11.986c0,1.431-1.16,2.591-2.591,2.591s-2.59-1.16-2.59-2.591,1.16-2.591,2.59-2.591,2.591,1.16,2.591,2.591h0Zm0,0"
-            />
-            <path
-              d="m12,0h0C5.373,0,0,5.373,0,12h0c0,6.627,5.373,12,12,12h0c6.627,0,12-5.373,12-12h0C24,5.373,18.627,0,12,0Zm7.637,15.19c-.037.827-.169,1.392-.361,1.886-.199.511-.465.945-.897,1.377-.432.432-.866.698-1.376.896-.494.192-1.06.323-1.887.361-.829.038-1.094.047-3.205.047s-2.375-.009-3.204-.047c-.827-.038-1.392-.169-1.887-.361-.511-.198-.944-.465-1.377-.896-.432-.432-.698-.866-.897-1.377-.192-.494-.323-1.059-.361-1.886-.038-.829-.047-1.094-.047-3.205s.009-2.375.047-3.204c.038-.827.169-1.392.361-1.887.199-.511.465-.944.897-1.376s.866-.698,1.377-.897c.494-.192,1.06-.323,1.887-.361.829-.038,1.094-.047,3.204-.047s2.376.009,3.205.047c.827.037,1.392.169,1.887.361.511.198.944.465,1.376.897.432.432.698.866.897,1.376.192.494.323,1.06.361,1.887.038.829.047,1.093.047,3.204s-.009,2.375-.047,3.205h0Zm-1.666-7.788c-.141-.363-.309-.622-.582-.894-.272-.272-.531-.441-.894-.582-.274-.106-.685-.233-1.443-.267-.82-.038-1.066-.045-3.141-.045s-2.321.008-3.141.045c-.757.034-1.169.161-1.443.267-.363.141-.622.309-.894.582-.272.272-.441.531-.582.894-.106.274-.233.685-.267,1.443-.038.819-.045,1.065-.045,3.141s.008,2.321.045,3.141c.035.757.161,1.169.267,1.443.141.363.309.622.582.894.272.272.531.44.894.581.274.107.685.233,1.443.268.819.038,1.065.045,3.141.045s2.322-.008,3.141-.045c.758-.035,1.169-.161,1.443-.268.363-.141.622-.309.894-.581s.441-.531.582-.894c.106-.274.233-.685.267-1.443.038-.82.046-1.066.046-3.141s-.008-2.321-.046-3.141c-.035-.758-.161-1.169-.267-1.443h0Zm-6.059,8.574c-2.204,0-3.991-1.787-3.991-3.991s1.787-3.991,3.991-3.991,3.991,1.787,3.991,3.991-1.787,3.991-3.991,3.991h0Zm4.149-7.207c-.515,0-.933-.417-.933-.932s.417-.933.933-.933.933.418.933.933-.418.932-.933.932h0Zm0,0"
-            />
-          </svg>`;
-div.appendChild(instagram);
-
-flex.appendChild(div);
-
-footer.appendChild(flex);
+social.appendChild(facebook);

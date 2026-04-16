@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Thank You</title>
+    <meta name="author" content="Bruno Câmara dos Santos" />
+    <meta name="description" content="Thank you page for the new member form" />
+    <meta property="og:title" content="Thank You" />
+    <meta
+      property="og:description"
+      content="Confirmation of the new member submission"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script type="module" src="./scripts/social.mjs"></script>
+    <script type="module" src="./scripts/footer.mjs"></script>
+    <script type="module" src="./scripts/thankyou.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <button id="hambutton" type="button" aria-label="Menu button"></button>
+        <div id="brand">
+          <img
+            src="images/main-ico.svg"
+            alt="main icon"
+            width="22"
+            height="22"
+          />
+          <span>Ward Attendance</span>
+        </div>
+        <img
+          id="theme"
+          src="images/light-theme.svg"
+          alt="theme toggle button"
+          width="44"
+          height="44"
+        />
+      </section>
+      <nav id="navigation">
+        <ul>
+          <li><a href="index.html">Attendance</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li class="current"><a href="addmember.html">Add Member</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="thankyou-page">
+        <div class="thankyou-card">
+          <p class="thankyou-badge">Saved successfully</p>
+          <h1>Thank You</h1>
+          <p id="thankyou-message">
+            The new member information was submitted successfully.
+          </p>
+
+          <div id="thankyou-summary" class="thankyou-summary"></div>
+
+          <a class="back-link" href="addmember.html">Add another member</a>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

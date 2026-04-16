@@ -1,18 +1,136 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Project Ward attendance plan</title>
-  <meta name="author" content="Bruno Câmara dos Santos" />
-  <meta name="description" content="Describe all details about the Ward attendance website" />
-  <link rel="stylesheet" href="./styles/websiteplan.css" />
-  <!-- <script src="./scripts/script.js" defer></script> -->
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Ward Attendance</title>
+    <meta name="author" content="Bruno Câmara dos Santos" />
+    <meta
+      name="description"
+      content="Display and analyze attendance statistics for a ward"
+    />
+    <meta property="og:title" content="Ward Attendance" />
+    <meta
+      property="og:description"
+      content="Register and show statistics about the ward attendance"
+    />
+    <!-- <meta property="og:image" content="###########################"> -->
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Scripts -->
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script type="module" src="./scripts/social.mjs"></script>
+    <script type="module" src="./scripts/footer.mjs"></script>
+    <script type="module" src="scripts/attendace.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <button id="hambutton"></button>
+        <div id="brand">
+          <img
+            src="images/main-ico.svg"
+            alt="main ico"
+            width="22"
+            height="22"
+          />
+          <span>Ward Attendance</span>
+        </div>
+        <img
+          id="theme"
+          src="images/light-theme.svg"
+          alt="button toggle theme"
+          width="44"
+          height="44"
+        />
+      </section>
+      <nav id="navigation">
+        <ul>
+          <li class="current"><a href="index.html">Attendance</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="addmember.html">Add Member</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cards-grid">
+        <section id="day-control">
+          <button id="back" aria-label="back button"></button>
+          <p id="today">April 26,2026</p>
+          <button id="next" aria-label="next button"></button>
+        </section>
+
+        <section id="weather">
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="current weather"
+            width="44"
+            height="44"
+          />
+          <p id="temp">26ºC</p>
+          <p id="current-weather">Raining</p>
+          <p id="city">Sete Lagoas, MG</p>
+        </section>
+
+        <div id="search-members">
+          <input type="text" placeholder="🔍︎ Search Members" />
+        </div>
+
+        <div id="group-filter">
+          <select name="group" id="group">
+            <option value="all" selected>All groups</option>
+            <option value="quorum">quorum</option>
+          </select>
+        </div>
+
+        <div id="attendance-buttons-control">
+          <button id="mark-all">MARK ALL</button>
+          <button id="clear">CLEAR</button>
+        </div>
+      </div>
+      <section id="member-table">
+        <table></table>
+      </section>
+    </main>
+    <div id="resume-flex">
+      <section id="resume">
+        <p id="present">Present: <span>44</span></p>
+        <p id="absent">Absent: <span>7</span></p>
+        <p id="totalmembers">Total Members: <span>99</span></p>
+      </section>
+      <button id="save-attendance" type="button">
+        <svg
+          role="img"
+          aria-labelledby="saveico"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"
+          width="22"
+          height="22"
+        >
+          <title id="saveico">save ico</title>
+          <path
+            fill="currentColor"
+            d="M160 144C151.2 144 144 151.2 144 160L144 480C144 488.8 151.2 496 160 496L480 496C488.8 496 496 488.8 496 480L496 237.3C496 233.1 494.3 229 491.3 226L416 150.6L416 240C416 257.7 401.7 272 384 272L224 272C206.3 272 192 257.7 192 240L192 144L160 144zM240 144L240 224L368 224L368 144L240 144zM96 160C96 124.7 124.7 96 160 96L402.7 96C419.7 96 436 102.7 448 114.7L525.3 192C537.3 204 544 220.3 544 237.3L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 160zM256 384C256 348.7 284.7 320 320 320C355.3 320 384 348.7 384 384C384 419.3 355.3 448 320 448C284.7 448 256 419.3 256 384z"
+          />
+        </svg>
+        <span>SAVE ATTENDANCE</span>
+      </button>
+    </div>
+  </body>
+  <footer></footer>
 </html>
