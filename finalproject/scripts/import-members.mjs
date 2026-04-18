@@ -7,11 +7,10 @@ export const importToLocal = async () => {
       const members = await data.json();
       //   All data will be change in local storage because It no possible to save directly in json file without backend...
       localStorage.setItem("MemberData", JSON.stringify(members));
-      
     } else {
       throw Error(data.text);
     }
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
 };
