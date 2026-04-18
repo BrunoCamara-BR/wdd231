@@ -93,7 +93,8 @@ export function buildTable(MembersData, indexDay) {
       "http://www.w3.org/2000/svg",
       "title",
     );
-    (title.setAttribute("id", "note"), (title.textContent = "Add note"));
+    // title.setAttribute("class", "note");
+    title.textContent = "Add note";
 
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
