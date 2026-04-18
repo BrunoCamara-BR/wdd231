@@ -345,7 +345,7 @@ main section {
 
 #member-table {
   padding: 0;
-  max-height: calc(50px * 9);
+  max-height: calc(50px * 6);
   overflow-y: auto;
   background-color: var(--color-bg-body);
 }
@@ -515,7 +515,7 @@ footer {
 }
 
 footer .infoCopyright {
-  padding: 10px 0;
+  padding: 10px 10px 0px 10px;
 }
 
 /*************************/
@@ -842,4 +842,25 @@ footer .infoCopyright {
 
 .form-section input {
   background-color: var(--color-bg-body);
+}
+
+.link {
+  color: var(--font-general);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.flex-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-profile img {
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-font);
 }

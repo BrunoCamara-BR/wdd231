@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
-    <title>Leadership</title>
+    <title>Attributions</title>
     <meta name="author" content="Bruno Câmara dos Santos" />
     <meta
       name="description"
-      content="Display all Leadership members fo the ward and additional information"
+      content="Attributions and external resources used in the Ward Attendance project"
     />
-    <meta property="og:title" content="Ward Attendance" />
+    <meta property="og:title" content="Attributions" />
     <meta
       property="og:description"
-      content="Register and show statistics about the ward attendance"
+      content="Attributions and external resources used in the Ward Attendance project"
     />
 
     <meta
       property="og:image"
-      content="https://brunocamara-br.github.io/wdd231/finalproject/images/og.image.leadership.webp"
+      content="https://brunocamara-br.github.io/wdd231/finalproject/images/og.image.attendance.webp"
     />
     <meta
       property="og:url"
-      content="https://brunocamara-br.github.io/wdd231/finalproject/leadership.html"
+      content="https://brunocamara-br.github.io/wdd231/finalproject/attributions.html"
     />
     <meta property="og:locale" content="en_US" />
 
@@ -44,8 +44,6 @@
     <script src="./scripts/theme.js" defer></script>
     <script type="module" src="./scripts/social.mjs"></script>
     <script type="module" src="./scripts/footer.mjs"></script>
-
-    <script type="module" src="./scripts/leadership.mjs"></script>
   </head>
   <body>
     <header>
@@ -71,15 +69,39 @@
       <nav id="navigation">
         <ul>
           <li><a href="index.html">Attendance</a></li>
-          <li class="current"><a href="leadership.html">Leadership</a></li>
-          <li><a href="addmember.html">Add Member</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li class="current"><a href="addmember.html">Add Member</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
-      <h1>Leadership</h1>
-      <section id="leadership-container"></section>
+      <section class="form-section">
+        <h1 class="form-title">Attributions</h1>
+
+        <div class="thankyou-card">
+          <dl>
+            <dt>Weather data</dt>
+            <dd>
+              OpenWeather API is used to retrieve current weather information.
+            </dd>
+
+            <dt>Fonts</dt>
+            <dd>Google Fonts: Inter and Roboto Condensed.</dd>
+
+            <dt>Icons and SVG resources</dt>
+            <dd>Custom SVG icons and UI symbols used from flaticon.</dd>
+
+            <dt>Hosting</dt>
+            <dd>GitHub Pages is used to host the project.</dd>
+
+            <dt>Project content</dt>
+            <dd>
+              Site content, structure, and code developed by Bruno Câmara dos
+              Santos.
+            </dd>
+          </dl>
+        </div>
+      </section>
     </main>
 
     <footer></footer>

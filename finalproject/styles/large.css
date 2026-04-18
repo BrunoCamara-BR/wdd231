@@ -24,4 +24,7 @@
   .thankyou-card {
     max-width: 700px;
   }
+  #member-table {
+    max-height: calc(50px * 10);
+  }
 }

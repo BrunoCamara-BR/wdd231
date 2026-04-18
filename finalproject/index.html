@@ -34,10 +34,19 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      />
+    </noscript>
     <!-- Scripts -->
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/theme.js" defer></script>
@@ -52,7 +61,7 @@
   <body>
     <header>
       <section>
-        <button id="hambutton"></button>
+        <button id="hambutton" aria-label="button navigation menu"></button>
         <div id="brand">
           <img
             src="images/main-ico.svg"
@@ -94,9 +103,9 @@
             width="44"
             height="44"
           />
-          <p id="temp"></p>
-          <p id="current-weather"></p>
-          <p id="city"></p>
+          <p id="temp">16°C</p>
+          <p id="current-weather">scattered clouds</p>
+          <p id="city">Sete Lagoas, BR</p>
         </section>
 
         <div id="search-members">
@@ -108,7 +117,9 @@
         </div>
 
         <div id="group-filter">
-          <select name="group" id="group"></select>
+          <select name="group" id="group" aria-label="Filter by organization">
+            <option value="">All organizations</option>
+          </select>
         </div>
 
         <div id="attendance-buttons-control">
@@ -116,16 +127,208 @@
           <button id="clear">CLEAR</button>
         </div>
       </div>
-      <section id="member-table"></section>
+      <section id="member-table">
+        <table>
+          <tbody>
+            <tr>
+              <td class="profile">
+                <div class="round"><p id="member">JC</p></div>
+              </td>
+              <td class="col-member-name">
+                Julia Santos Carvalho <br /><span>Relief Society</span>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="note"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="note">Add note</title>
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"
+                  ></path>
+                </svg>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="checkbox-checked"
+                  fill="none"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  width="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="checkbox-checked">checkbox checked</title>
+                  <path
+                    clip-rule="evenodd"
+                    d="m1 4.99999c0-2.18866 1.81136-3.99999 4-3.99999h14c2.1886 0 4 1.81133 4 3.99999v14.00001c0 2.1887-1.8114 4-4 4h-14c-2.18864 0-4-1.8113-4-4zm16.1616 4.25302c.3905-.39053.3905-1.02369 0-1.41422-.3905-.39052-1.0237-.39052-1.4142 0l-5.2819 5.28191-2.20219-2.271c-.38447-.3964-1.01756-.4062-1.41405-.0217-.39648.3845-.40622 1.0175-.02175 1.414l2.90909 3c.18649.1923.4423.3018.7102.3038.2679.0021.5254-.1034.7148-.2928z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="profile">
+                <div class="round"><p id="member">MS</p></div>
+              </td>
+              <td class="col-member-name">
+                Marcos Pereira Santos <br /><span>Elders Quorum</span>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="note"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="note">Add note</title>
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"
+                  ></path>
+                </svg>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="checkbox-checked"
+                  fill="none"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  width="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="checkbox-checked">checkbox checked</title>
+                  <path
+                    clip-rule="evenodd"
+                    d="m1 4.99999c0-2.18866 1.81136-3.99999 4-3.99999h14c2.1886 0 4 1.81133 4 3.99999v14.00001c0 2.1887-1.8114 4-4 4h-14c-2.18864 0-4-1.8113-4-4zm16.1616 4.25302c.3905-.39053.3905-1.02369 0-1.41422-.3905-.39052-1.0237-.39052-1.4142 0l-5.2819 5.28191-2.20219-2.271c-.38447-.3964-1.01756-.4062-1.41405-.0217-.39648.3845-.40622 1.0175-.02175 1.414l2.90909 3c.18649.1923.4423.3018.7102.3038.2679.0021.5254-.1034.7148-.2928z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="profile">
+                <div class="round"><p id="member">CR</p></div>
+              </td>
+              <td class="col-member-name">
+                Carlos Eduardo Ramirez <br /><span>Elders Quorum</span>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="note"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="note">Add note</title>
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"
+                  ></path>
+                </svg>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="checkbox-unchecked"
+                  id="Layer_2"
+                  viewBox="0 0 16 16"
+                  height="44"
+                  width="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Layer 2"
+                >
+                  <title id="checkbox-unchecked">checkbox unchecked</title>
+                  <path
+                    fill="currentColor"
+                    d="m3 15.5h10a2.5026 2.5026 0 0 0 2.5-2.5v-10a2.5026 2.5026 0 0 0 -2.5-2.5h-10a2.5026 2.5026 0 0 0 -2.5 2.5v10a2.5026 2.5026 0 0 0 2.5 2.5zm-1.5-12.5a1.5017 1.5017 0 0 1 1.5-1.5h10a1.5017 1.5017 0 0 1 1.5 1.5v10a1.5017 1.5017 0 0 1 -1.5 1.5h-10a1.5017 1.5017 0 0 1 -1.5-1.5z"
+                  ></path>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="profile">
+                <div class="round"><p id="member">AO</p></div>
+              </td>
+              <td class="col-member-name">
+                Ana Beatriz Souza Oliveira <br /><span>Relief Society</span>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="note"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="note">Add note</title>
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"
+                  ></path>
+                </svg>
+              </td>
+              <td class="pointer">
+                <svg
+                  role="img"
+                  aria-labelledby="checkbox-checked"
+                  fill="none"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  width="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="checkbox-checked">checkbox checked</title>
+                  <path
+                    clip-rule="evenodd"
+                    d="m1 4.99999c0-2.18866 1.81136-3.99999 4-3.99999h14c2.1886 0 4 1.81133 4 3.99999v14.00001c0 2.1887-1.8114 4-4 4h-14c-2.18864 0-4-1.8113-4-4zm16.1616 4.25302c.3905-.39053.3905-1.02369 0-1.41422-.3905-.39052-1.0237-.39052-1.4142 0l-5.2819 5.28191-2.20219-2.271c-.38447-.3964-1.01756-.4062-1.41405-.0217-.39648.3845-.40622 1.0175-.02175 1.414l2.90909 3c.18649.1923.4423.3018.7102.3038.2679.0021.5254-.1034.7148-.2928z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
       <div id="resume-flex">
         <section id="resume">
-          <p id="present">Present: <span>44</span></p>
-          <p id="absent">Absent: <span>7</span></p>
-          <p id="totalmembers">Total Members: <span>99</span></p>
+          <p id="present">Present: <span>16</span></p>
+          <p id="absent">Absent: <span>15</span></p>
+          <p id="totalmembers">Total Members: <span>31</span></p>
         </section>
       </div>
-      <dialog id="notesDialog">
+      <dialog id="notesDialog" aria-labelledby="dialogName">
         <div class="dialog-header">
           <h2 id="dialogName">Member Name</h2>
           <button id="closeDialog" aria-label="Close dialog">✕</button>
