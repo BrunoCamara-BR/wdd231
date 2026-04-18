@@ -8,15 +8,15 @@
   --color-bg-section: #f0f7fd;
   --color-font: #092c64;
   --color-font-title: #0b3991;
-  --color-wayfinding-links: 35, 112, 235; /*#2370eb*/
-  --color-bg-main-bt: #2370eb;
+  --color-wayfinding-links: 17 82 187;
+  --color-bg-main-bt: #1152bb;
   --color-font-main-bt: #fefefe;
   --color-bg-normal-bt: #f1f3f7;
   --color-font-normal-bt: #4a4f54;
   --color-border-highlight: #c3dbf6;
   --color-border: #dee1e7;
   --color-profile: #d5caed;
-  --color-checkbox: #104eb1;
+  --color-checkbox: #0f4caf;
   --color-absent-member: #a80000;
 
   /* -Fonts- */
@@ -31,15 +31,15 @@ body.dark {
   --color-bg-section: #283243;
   --color-font: #dbe8f7;
   --color-font-title: #f2f4f4;
-  --color-wayfinding-links: 35, 112, 235; /*#2370eb*/
-  --color-bg-main-bt: #2370eb;
+  --color-wayfinding-links: 17 82 187;
+  --color-bg-main-bt: #1152bb;
   --color-font-main-bt: #fefefe;
   --color-bg-normal-bt: #212936;
   --color-font-normal-bt: #b0b5bf;
   --color-border-highlight: #303945;
   --color-border: #49515c;
-  --color-profile: #404973;
-  --color-checkbox: #a0c2f8;
+  --color-profile: #323958;
+  --color-checkbox: #a2c2f6;
   --color-absent-member: #ffa8a8;
 }
 /*************************/
@@ -146,7 +146,7 @@ a {
 
 #navigation a:hover,
 .current a:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 #navigation .current a {
@@ -165,6 +165,11 @@ ul {
 /********* MAIN **********/
 /*************************/
 /******** TABLE PAGE *****/
+
+h1 {
+  color: var(--color-font);
+  margin: 10px 0 10px 10px;
+}
 
 main section {
   background-color: var(--color-bg-section);
@@ -206,7 +211,7 @@ main section {
 }
 
 #back:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 #next::after {
@@ -214,7 +219,7 @@ main section {
 }
 
 #next:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 #weather {
@@ -231,7 +236,7 @@ main section {
 #weather img {
   display: block;
   margin: 0 auto;
-  background-color: rgba(var(--color-wayfinding-links), 0.8);
+  background-color: rgb(var(--color-wayfinding-links) / 0.8);
   border-radius: 10px;
   grid-area: img;
   margin-right: 10px;
@@ -322,7 +327,7 @@ main section {
 }
 
 #mark-all:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.8);
 }
 
 #clear {
@@ -335,7 +340,7 @@ main section {
 }
 
 #clear:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 #member-table {
@@ -373,10 +378,10 @@ main section {
 
 #member-table table td span {
   font-size: 12px;
-  opacity: 0.8;
 }
 
 .pointer {
+  color: var(--color-checkbox);
   cursor: pointer;
   width: 44px;
   height: 44px;
@@ -404,7 +409,7 @@ td svg {
 .profile div p {
   font-weight: 500;
   text-align: center;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 #resume {
@@ -456,7 +461,7 @@ td svg {
 }
 
 #save-attendance:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 #save-attendance svg {
@@ -506,7 +511,7 @@ footer {
 }
 
 .social svg:hover {
-  fill: rgba(var(--color-wayfinding-links), 0.8);
+  fill: rgb(var(--color-wayfinding-links) / 0.8);
 }
 
 footer .infoCopyright {
@@ -571,7 +576,7 @@ footer .infoCopyright {
 }
 
 #closeDialog:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 .dialog-content {
@@ -639,7 +644,7 @@ footer .infoCopyright {
 }
 
 #saveNotesBtn:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.2);
 }
 
 /******************/
@@ -710,11 +715,6 @@ footer .infoCopyright {
   padding: 10px;
 }
 
-.form-title {
-  color: var(--color-font-title);
-  margin-bottom: 10px;
-}
-
 .form-fieldset {
   border: 1px solid var(--color-border-highlight);
   border-radius: 5px;
@@ -767,7 +767,7 @@ footer .infoCopyright {
 }
 
 #add-member-btn:hover {
-  background-color: rgba(var(--color-wayfinding-links), 0.2);
+  background-color: rgb(var(--color-wayfinding-links) / 0.8);
 }
 
 /* leve "click animation" */
@@ -843,8 +843,3 @@ footer .infoCopyright {
 .form-section input {
   background-color: var(--color-bg-body);
 }
-
-/* .form-select option {
-  max-width: 100%;
-  white-space: normal;
-} */
