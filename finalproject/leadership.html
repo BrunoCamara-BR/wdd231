@@ -4,45 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
-    <title>Ward Leadership</title>
+    <title>Ward Attendance</title>
     <meta name="author" content="Bruno Câmara dos Santos" />
     <meta
       name="description"
-      content="Display ward leadership contact information"
+      content="Display and analyze attendance statistics for a ward"
     />
-    <meta property="og:title" content="Ward Leadership" />
+    <meta property="og:title" content="Ward Attendance" />
     <meta
       property="og:description"
-      content="Show contact information for members with leadership callings"
+      content="Register and show statistics about the ward attendance"
     />
+    <!-- <meta property="og:image" content="###########################"> -->
     <meta property="og:locale" content="en_US" />
 
+    <!-- Style -->
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Scripts -->
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/theme.js" defer></script>
     <script type="module" src="./scripts/social.mjs"></script>
     <script type="module" src="./scripts/footer.mjs"></script>
+
     <script type="module" src="./scripts/leadership.mjs"></script>
   </head>
   <body>
     <header>
       <section>
-        <button id="hambutton" type="button" aria-label="Menu button"></button>
+        <button id="hambutton"></button>
         <div id="brand">
           <img
             src="images/main-ico.svg"
-            alt="main icon"
+            alt="main ico"
             width="22"
             height="22"
           />
@@ -51,7 +55,7 @@
         <img
           id="theme"
           src="images/light-theme.svg"
-          alt="theme toggle button"
+          alt="button toggle theme"
           width="44"
           height="44"
         />
@@ -66,14 +70,7 @@
     </header>
 
     <main>
-      <section id="leadership-page">
-        <div class="leadership-intro">
-          <h1>Leadership</h1>
-          <p>Contact details for members with leadership callings.</p>
-        </div>
-
-        <div id="leadership-list"></div>
-      </section>
+      <section id="leadership-container"></section>
     </main>
 
     <footer></footer>

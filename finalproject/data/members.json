@@ -1,246 +1,932 @@
 [
   {
     "fullName": "João Pedro da Silva",
-    "sex": "Male",
+    "gender": "Male",
     "age": 41,
     "address": "Rua das Acácias, 184, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98841-2037",
     "organization": "Elders Quorum",
-    "leadership": "Bishop"
+    "leadership": "Bishop",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": "He was working"
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Marcos Vinicius Pereira Santos",
-    "sex": "Male",
+    "gender": "Male",
     "age": 38,
     "address": "Rua Jacarandá, 57, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99217-4685",
     "organization": "Elders Quorum",
-    "leadership": "First Counselor in the Bishopric"
+    "leadership": "First Counselor in the Bishopric",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": "Traveling"
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Carlos Eduardo Ramirez",
-    "sex": "Male",
+    "gender": "Male",
     "age": 35,
     "address": "Rua São Jorge, 231, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99752-1048",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Ana Beatriz Souza Oliveira",
-    "sex": "Female",
+    "gender": "Female",
     "age": 46,
     "address": "Rua das Palmeiras, 90, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98463-7721",
     "organization": "Relief Society",
-    "leadership": "Relief Society President"
+    "leadership": "Relief Society President",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Luana Fernanda Garcia",
-    "sex": "Female",
+    "gender": "Female",
     "age": 31,
     "address": "Rua do Ipê, 144, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99108-5594",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": "Home issues"
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Camila Oliveira Torres",
-    "sex": "Female",
+    "gender": "Female",
     "age": 29,
     "address": "Rua das Mangueiras, 312, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98329-6140",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": "Busy"
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Patricia Nunes",
-    "sex": "Female",
+    "gender": "Female",
     "age": 36,
     "address": "Rua Cedro, 78, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98976-4302",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Pedro Henrique Lima Costa",
-    "sex": "Male",
+    "gender": "Male",
     "age": 33,
     "address": "Rua Primavera, 205, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99421-8067",
     "organization": "Elders Quorum",
-    "leadership": "Elders Quorum President"
+    "leadership": "Elders Quorum President",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Daniel Costa",
-    "sex": "Male",
+    "gender": "Male",
     "age": 28,
     "address": "Rua das Flores, 66, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98144-9038",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Thiago Almeida Souza",
-    "sex": "Male",
+    "gender": "Male",
     "age": 26,
     "address": "Rua das Orquídeas, 415, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99613-2751",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Rafael Mendes",
-    "sex": "Male",
+    "gender": "Male",
     "age": 40,
     "address": "Rua Bela Vista, 120, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98730-1149",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Julia Santos Carvalho",
-    "sex": "Female",
+    "gender": "Female",
     "age": 34,
     "address": "Rua das Laranjeiras, 29, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99052-6683",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Mia Rodriguez",
-    "sex": "Female",
+    "gender": "Female",
     "age": 25,
     "address": "Rua Alegria, 188, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98217-5416",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Sofia Martins",
-    "sex": "Female",
+    "gender": "Female",
     "age": 17,
     "address": "Rua do Sol, 244, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99548-3209",
-    "organization": "Young Women"
+    "organization": "Young Women",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Valentina Herrera",
-    "sex": "Female",
+    "gender": "Female",
     "age": 15,
     "address": "Rua Santo Antônio, 73, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98651-7743",
-    "organization": "Young Women"
+    "organization": "Young Women",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Gabriel Rocha Silva",
-    "sex": "Male",
+    "gender": "Male",
     "age": 37,
     "address": "Rua das Pedras, 301, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99384-2056",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Bruna Lopes",
-    "sex": "Female",
+    "gender": "Female",
     "age": 30,
     "address": "Rua Vitória, 52, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98093-6174",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Fernanda Castillo Souza",
-    "sex": "Female",
+    "gender": "Female",
     "age": 32,
     "address": "Rua do Horizonte, 167, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99826-4590",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Isabela Pereira",
-    "sex": "Female",
+    "gender": "Female",
     "age": 41,
     "address": "Rua das Acácias, 245, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98567-3081",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Lucas Martins da Costa",
-    "sex": "Male",
+    "gender": "Male",
     "age": 39,
     "address": "Rua Novo Tempo, 98, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99176-8425",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Nicolas Duarte",
-    "sex": "Male",
+    "gender": "Male",
     "age": 44,
     "address": "Rua dos Pinheiros, 211, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98402-6907",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Emily Costa Souza",
-    "sex": "Female",
+    "gender": "Female",
     "age": 28,
     "address": "Rua Esperança, 140, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99701-3582",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Hugo Ferreira",
-    "sex": "Male",
+    "gender": "Male",
     "age": 36,
     "address": "Rua Monte Sinai, 64, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98892-1460",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Daniela Vargas Ribeiro",
-    "sex": "Female",
+    "gender": "Female",
     "age": 27,
     "address": "Rua das Oliveiras, 376, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99315-9074",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Bruno Henrique Alves",
-    "sex": "Male",
+    "gender": "Male",
     "age": 12,
     "address": "Rua da Harmonia, 88, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98911-2248",
-    "organization": "Primary"
+    "organization": "Primary",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": "At work"
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Carolina Mendes",
-    "sex": "Female",
+    "gender": "Female",
     "age": 10,
     "address": "Rua das Flores, 410, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99288-1134",
-    "organization": "Primary"
+    "organization": "Primary",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Diego Ramos Silva",
-    "sex": "Male",
+    "gender": "Male",
     "age": 16,
     "address": "Rua do Bosque, 133, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98644-7751",
-    "organization": "Young Men"
+    "organization": "Young Men",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Mariana Castro",
-    "sex": "Female",
+    "gender": "Female",
     "age": 14,
     "address": "Rua das Hortênsias, 19, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99488-6602",
-    "organization": "Young Women"
+    "organization": "Young Women",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "André Luiz Barbosa",
-    "sex": "Male",
+    "gender": "Male",
     "age": 45,
     "address": "Rua Bela Aurora, 267, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 98173-9045",
-    "organization": "Elders Quorum"
+    "organization": "Elders Quorum",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   },
   {
     "fullName": "Larissa Gonçalves Ferreira",
-    "sex": "Female",
+    "gender": "Female",
     "age": 27,
     "address": "Rua das Mangueiras, 61, Bairro Progresso, Sete Lagoas, MG, Brazil",
     "cellPhone": "+55 31 99734-5510",
-    "organization": "Relief Society"
+    "organization": "Relief Society",
+    "leadership": "",
+    "attendance": [
+      {
+        "date": "2026-04-05",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-12",
+        "present": true,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-19",
+        "present": false,
+        "notes": ""
+      },
+      {
+        "date": "2026-04-26",
+        "present": false,
+        "notes": ""
+      }
+    ]
   }
 ]

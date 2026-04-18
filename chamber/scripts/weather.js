@@ -20,7 +20,7 @@ let dateOption = {
   timeZone: "America/Sao_Paulo",
 };
 
-// Forecast
+
 const div = document.querySelector("#forecast-days");
 const day1 = document.createElement("p");
 const day2 = document.createElement("p");
@@ -73,13 +73,13 @@ function displayResults(weather, forecast) {
   let day2number = forecast3Days[1].dt_txt.split(" ")[0];
   let day2name = new Date(day2number).toLocaleDateString("en-US", {
     weekday: "long",
-  }); // I chose to change "pt-BR" (Brazil) to "en-US" to be easier to understand.
+  }); 
   day2.innerHTML = `${day2name}: <span>${forecast3Days[1].main.temp}&deg;C</span>`;
 
   let day3number = forecast3Days[2].dt_txt.split(" ")[0];
   let day3name = new Date(day3number).toLocaleDateString("en-US", {
     weekday: "long",
-  }); // I chose to change "pt-BR" (Brazil) to "en-US" to be easier to understand.
+  }); 
   day3.innerHTML = `${day3name}: <span>${forecast3Days[2].main.temp}&deg;C</span>`;
 
   div.appendChild(day1);

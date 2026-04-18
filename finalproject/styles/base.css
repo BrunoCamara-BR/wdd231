@@ -1,17 +1,6 @@
 /*************************/
 /******** VARIABLES *************/
 /*************************/
-@keyframes page-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 :root {
   /* -Light theme- */
   --color-bg-body: #fefefe;
@@ -142,13 +131,6 @@ header button.show::after {
   display: block;
 }
 
-#today {
-  color: var(--color-font);
-  font-weight: 700;
-  text-align: center;
-  padding: 0 8px;
-}
-
 a {
   text-decoration: none;
 }
@@ -258,6 +240,7 @@ main section {
 #temp {
   grid-area: temp;
   font-weight: 700;
+  margin-right: 5px;
 }
 
 #current-weather {
@@ -397,101 +380,11 @@ main section {
   cursor: pointer;
   width: 44px;
   height: 44px;
-  text-align: center;
 }
 
-.icon-button {
-  width: 44px;
-  height: 44px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  padding: 0;
-}
-
-.icon-button img {
-  width: 44px;
-  height: 44px;
+td svg {
   display: block;
   padding: 8px;
-}
-
-.empty-row td {
-  padding: 16px;
-  text-align: center;
-  color: var(--color-font-normal-bt);
-}
-
-dialog.note-dialog {
-  border: none;
-  border-radius: 10px;
-  padding: 0;
-  width: min(520px, calc(100% - 20px));
-  background-color: var(--color-bg-section);
-  color: var(--color-font);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-dialog.note-dialog::backdrop {
-  background: rgba(var(--color-wayfinding-links), 0.35);
-}
-
-.note-box {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.note-box h3 {
-  color: var(--color-font-title);
-}
-
-.note-box p {
-  color: var(--color-font);
-  opacity: 0.9;
-}
-
-.note-box textarea {
-  width: 100%;
-  min-height: 130px;
-  resize: vertical;
-  border-radius: 5px;
-  border: 1px solid var(--color-border-highlight);
-  background-color: var(--color-bg-body);
-  color: var(--color-font);
-  padding: 10px;
-  outline: none;
-}
-
-.note-box textarea:focus {
-  border-color: var(--color-wayfinding-links);
-}
-
-.note-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.note-actions button {
-  height: 44px;
-  min-width: 100px;
-  border-radius: 5px;
-  border: 1px solid var(--color-border-highlight);
-  cursor: pointer;
-}
-
-.note-actions .close-note {
-  background-color: var(--color-bg-normal-bt);
-  color: var(--color-font-normal-bt);
-}
-
-.note-actions .save-note {
-  background-color: var(--color-bg-main-bt);
-  color: var(--color-font-main-bt);
 }
 
 .col-member-name {
@@ -620,233 +513,338 @@ footer .infoCopyright {
   padding: 10px 0;
 }
 
-/* Leadership page */
-#leadership-page {
-  display: grid;
-  gap: 10px;
+/*************************/
+/******** DIALOG NOTES ********/
+/*************************/
+
+#notesDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid var(--color-border-highlight);
+  border-radius: 8px;
+  padding: 0;
+
+  width: min(600px, 92vw);
+
+  max-height: 70vh;
+
+  background-color: var(--color-bg-section);
+  color: var(--color-font);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
 }
 
-.leadership-intro {
+#notesDialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border-highlight);
+}
+
+#dialogName {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-font-title);
+}
+
+#closeDialog {
+  width: 44px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-bg-normal-bt);
+  color: var(--color-font);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  line-height: 1;
+}
+
+#closeDialog:hover {
+  background-color: rgba(var(--color-wayfinding-links), 0.2);
+}
+
+.dialog-content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  max-height: 45vh;
+}
+
+.info-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 14px;
+}
+
+.info-grid p {
+  padding: 6px;
+  background-color: var(--color-bg-body);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.notes-section {
+  display: flex;
+  flex-direction: column;
   gap: 6px;
 }
 
-.leadership-intro h1 {
-  color: var(--color-font-title);
-  font-size: 1.6rem;
-}
-
-.leadership-intro p {
+#dialogNotes {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border-highlight);
+  background-color: var(--color-bg-body);
   color: var(--color-font);
+  outline: none;
 }
 
-#leadership-list {
+#dialogNotes:focus {
+  border: 1px solid var(--color-wayfinding-links);
+}
+
+.dialog-footer {
+  padding: 12px 14px;
+  border-top: 1px solid var(--color-border-highlight);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#saveNotesBtn {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--color-border-highlight);
+  background-color: var(--color-bg-main-bt);
+  color: var(--color-font-main-bt);
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+#saveNotesBtn:hover {
+  background-color: rgba(var(--color-wayfinding-links), 0.2);
+}
+
+/******************/
+
+#leadership-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  margin: 10px;
 }
 
 .leader-card {
-  background-color: var(--color-bg-body);
+  background-color: var(--color-bg-section);
   border: 1px solid var(--color-border-highlight);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px;
-  display: grid;
-  gap: 10px;
-}
 
-.leader-top {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.leader-initials {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   display: grid;
-  place-items: center;
-  background-color: var(--color-profile);
-  color: var(--color-font);
-  font-weight: 700;
+  grid-template-areas:
+    "name"
+    "role"
+    "info";
+  gap: 8px;
 }
 
 .leader-name {
+  grid-area: name;
+  font-weight: 700;
+  font-size: 16px;
   color: var(--color-font-title);
 }
 
 .leader-role {
-  color: var(--color-font-normal-bt);
-  font-size: 14px;
+  grid-area: role;
+  font-weight: 600;
+  color: var(--color-checkbox);
 }
 
-.leader-info {
+.leader-grid {
+  grid-area: info;
   display: grid;
-  gap: 8px;
-}
-
-.leader-info div {
-  display: grid;
-  gap: 2px;
-}
-
-.leader-info dt {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--color-font-normal-bt);
-}
-
-.leader-info dd {
-  margin: 0;
-  color: var(--color-font);
-  overflow-wrap: anywhere;
-}
-
-.empty-leaders {
-  padding: 10px;
-  text-align: center;
-  color: var(--color-font-normal-bt);
-}
-
-.leader-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.leader-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-/* Form pages */
-.form-page,
-.thankyou-page {
-  margin: 10px;
-}
-
-.form-intro,
-.thankyou-card {
-  animation: page-fade-up 0.35s ease-out;
-}
-
-.form-intro {
-  margin-bottom: 10px;
-  display: grid;
+  grid-template-columns: 1fr;
   gap: 6px;
-}
-
-.form-intro h1,
-.thankyou-card h1 {
-  color: var(--color-font-title);
-}
-
-.form-intro p,
-.thankyou-card p {
   color: var(--color-font);
 }
 
-.member-form {
+.leader-grid p {
+  margin: 0;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-body);
+  font-size: 13px;
+}
+
+.leader-grid p:last-child {
+  grid-column: 1 / 3;
+}
+
+/*************************/
+/******** ADD MEMBER FORM */
+/*************************/
+
+.form-section {
   background-color: var(--color-bg-section);
   border: 1px solid var(--color-border-highlight);
   border-radius: 5px;
   padding: 10px;
-  display: grid;
-  gap: 10px;
 }
 
-.member-form label {
-  display: grid;
-  gap: 6px;
+.form-title {
+  color: var(--color-font-title);
+  margin-bottom: 10px;
+}
+
+.form-fieldset {
+  border: 1px solid var(--color-border-highlight);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-fieldset legend {
+  font-weight: 600;
+  color: var(--color-font-title);
+}
+
+.form-fieldset label {
+  font-size: 14px;
   color: var(--color-font);
-  font-weight: 500;
 }
 
-.member-form input,
-.member-form select {
+.form-fieldset input {
   height: 44px;
-  width: 100%;
+  padding: 0 10px;
   border-radius: 5px;
   border: 1px solid var(--color-border-highlight);
   background-color: var(--color-bg-body);
   color: var(--color-font);
-  padding: 0 10px;
+}
+
+.form-fieldset input:focus {
   outline: none;
+  border: 1px solid var(--color-wayfinding-links);
 }
 
-.member-form input:focus,
-.member-form select:focus {
-  border-color: var(--color-wayfinding-links);
-}
-
-.member-form .wide {
+/* BUTTON */
+#add-member-btn {
   width: 100%;
-}
-
-.form-submit {
   height: 44px;
-  border: 1px solid var(--color-border-highlight);
   border-radius: 5px;
+  border: 1px solid var(--color-border-highlight);
   background-color: var(--color-bg-main-bt);
   color: var(--color-font-main-bt);
-  font-weight: 700;
   cursor: pointer;
+  font-weight: 600;
+
   transition:
-    background-color 0.5s ease,
-    transform 0.2s ease;
+    transform 0.15s ease,
+    background-color 0.3s ease;
 }
 
-.form-submit:hover {
+#add-member-btn:hover {
   background-color: rgba(var(--color-wayfinding-links), 0.2);
 }
 
-.form-submit:active {
-  transform: translateY(1px);
+/* leve "click animation" */
+#add-member-btn.clicked {
+  transform: scale(0.96);
+}
+
+/*************************/
+/******** THANK YOU *******/
+/*************************/
+
+.thankyou-msg {
+  margin: 10px 0;
+  color: var(--color-font);
+  font-size: 14px;
+}
+
+.thankyou {
+  margin-top: 10px;
 }
 
 .thankyou-card {
   background-color: var(--color-bg-section);
   border: 1px solid var(--color-border-highlight);
   border-radius: 5px;
-  padding: 16px;
-  display: grid;
-  gap: 12px;
+  padding: 10px;
 }
 
-.thankyou-badge {
-  display: inline-block;
-  width: fit-content;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background-color: rgba(var(--color-wayfinding-links), 0.15);
+.thankyou-card h2 {
   color: var(--color-font-title);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.thankyou-summary {
+.thankyou-card dl {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 8px;
 }
 
-.summary-item {
-  padding: 10px;
-  border-radius: 5px;
+.thankyou-card dt {
+  font-weight: 600;
+  color: var(--color-font-title);
+}
+
+.thankyou-card dd {
+  margin: 0;
+  padding: 6px;
   background-color: var(--color-bg-body);
   border: 1px solid var(--color-border);
+  border-radius: 5px;
   color: var(--color-font);
 }
 
-.back-link {
-  width: fit-content;
-  color: var(--color-font-title);
-  font-weight: 700;
-  text-decoration: none;
+.form-select {
+  color: var(--color-font-normal-bt);
+  text-align: center;
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--color-border-highlight);
+  background-color: var(--color-bg-body);
 }
 
-.back-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.form-select:focus {
+  border: 1px solid var(--color-wayfinding-links);
 }
+
+.form-select:active {
+  border: 1px solid var(--color-wayfinding-links);
+}
+
+.form-section input {
+  background-color: var(--color-bg-body);
+}
+
+/* .form-select option {
+  max-width: 100%;
+  white-space: normal;
+} */
